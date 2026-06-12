@@ -29,7 +29,9 @@ export default function Navbar() {
             to="hero"
             smooth
             duration={500}
-            className="cursor-pointer font-heading text-xl font-bold tracking-tight text-cocoa"
+            className={`cursor-pointer font-heading text-xl font-bold tracking-tight transition-colors ${
+            scrolled ? "text-cocoa" : "text-white"
+          }`}
           >
             {siteData.name}
           </Link>
@@ -44,7 +46,9 @@ export default function Navbar() {
                 offset={-80}
                 spy
                 activeClass="text-clay"
-                className="cursor-pointer text-sm font-medium text-cocoa/80 transition-colors hover:text-clay"
+                className={`cursor-pointer text-sm font-medium transition-colors hover:text-clay ${
+                  scrolled ? "text-cocoa/80" : "text-white/80"
+                }`}
               >
                 {link.label}
               </Link>
@@ -65,9 +69,9 @@ export default function Navbar() {
             aria-label="Toggle menu"
           >
             {mobileOpen ? (
-              <X className="h-6 w-6 text-cocoa" />
+              <X className={`h-6 w-6 ${scrolled ? "text-cocoa" : "text-white"}`} />
             ) : (
-              <Menu className="h-6 w-6 text-cocoa" />
+              <Menu className={`h-6 w-6 ${scrolled ? "text-cocoa" : "text-white"}`} />
             )}
           </button>
         </div>

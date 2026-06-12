@@ -19,7 +19,7 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 mx-auto max-w-4xl px-4 text-center animate-fade-in">
-        <p className="mb-3 font-body text-sm font-medium uppercase tracking-[0.2em] text-amber-light">
+        <p className="mb-3 font-body text-sm font-medium uppercase tracking-[0.2em] text-white/90">
           {siteData.hero.subheadline}
         </p>
         <h1 className="mb-6 font-heading text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">
