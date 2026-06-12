@@ -1,11 +1,17 @@
 import { Shield, MessageCircle } from "lucide-react";
+import { useUnit } from "../context/UnitContext";
 import { siteData } from "../data/siteData";
 
 export default function FinalCTA() {
+  const { activeUnit } = useUnit();
+
   return (
     <section className="relative overflow-hidden">
       <div className="bg-gradient-to-br from-clay to-amber py-20 sm:py-28">
         <div className="mx-auto max-w-4xl px-4 text-center">
+          <p className="mb-2 font-body text-sm font-medium uppercase tracking-[0.15em] text-white/70">
+            {activeUnit.name}
+          </p>
           <h2 className="font-heading text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
             {siteData.finalCta.headline}
           </h2>
@@ -14,7 +20,7 @@ export default function FinalCTA() {
           </p>
 
           <a
-            href={siteData.airbnbUrl}
+            href={activeUnit.airbnbUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-8 inline-block rounded-full bg-white px-10 py-5 text-lg font-bold text-clay shadow-xl transition-all hover:scale-105 hover:shadow-2xl"

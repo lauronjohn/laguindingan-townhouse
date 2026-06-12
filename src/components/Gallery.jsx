@@ -4,9 +4,12 @@ import Autoplay from "embla-carousel-autoplay";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import { ChevronLeft, ChevronRight, ZoomIn } from "lucide-react";
-import { siteData } from "../data/siteData";
+import { useUnit } from "../context/UnitContext";
 
 export default function Gallery() {
+  const { activeUnit } = useUnit();
+  const { gallery } = activeUnit;
+
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
   const [emblaRef, emblaApi] = useEmblaCarousel(
@@ -22,7 +25,7 @@ export default function Gallery() {
     setLightboxOpen(true);
   };
 
-  const lightboxSlides = siteData.gallery.images.map((img) => ({
+  const lightboxSlides = gallery.images.map((img) => ({
     src: img.src,
     alt: img.alt,
   }));
@@ -32,17 +35,17 @@ export default function Gallery() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <span className="inline-block rounded-full bg-sage/10 px-4 py-1 text-xs font-semibold uppercase tracking-wider text-sage">
-            Gallery
+            {activeUnit.name} Gallery
           </span>
           <h2 className="mt-4 font-heading text-3xl font-bold text-cocoa sm:text-4xl">
-            {siteData.gallery.headline}
+            {gallery.headline}
           </h2>
         </div>
 
         <div className="relative mt-14">
           <div className="overflow-hidden rounded-2xl" ref={emblaRef}>
             <div className="flex">
-              {siteData.gallery.images.map((image, index) => (
+              {gallery.images.map((image, index) => (
                 <div
                   key={index}
                   className="min-w-0 flex-[0_0_100%] sm:flex-[0_0_66%] lg:flex-[0_0_50%] pl-4"

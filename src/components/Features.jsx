@@ -1,5 +1,5 @@
-import { Wifi, ChefHat, Monitor, Tv, Car, Shirt, Sun } from "lucide-react";
-import { siteData } from "../data/siteData";
+import { Wifi, ChefHat, Monitor, Tv, Car, Shirt, Sun, DoorOpen } from "lucide-react";
+import { useUnit } from "../context/UnitContext";
 
 const iconMap = {
   Wifi,
@@ -9,23 +9,27 @@ const iconMap = {
   Car,
   Shirt,
   Sun,
+  DoorOpen,
 };
 
 export default function Features() {
+  const { activeUnit } = useUnit();
+  const { features } = activeUnit;
+
   return (
     <section id="features" className="bg-warm py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <span className="inline-block rounded-full bg-clay/10 px-4 py-1 text-xs font-semibold uppercase tracking-wider text-clay">
-            Amenities
+            {activeUnit.name} Amenities
           </span>
           <h2 className="mt-4 font-heading text-3xl font-bold text-cocoa sm:text-4xl">
-            {siteData.features.headline}
+            {features.headline}
           </h2>
         </div>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {siteData.features.items.map((item) => {
+        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {features.items.map((item) => {
             const Icon = iconMap[item.icon] || Sun;
             return (
               <div

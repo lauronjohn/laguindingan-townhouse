@@ -1,6 +1,8 @@
+import { UnitProvider } from "./context/UnitContext";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import TrustBar from "./components/TrustBar";
+import UnitSelector from "./components/UnitSelector";
 import About from "./components/About";
 import Features from "./components/Features";
 import Gallery from "./components/Gallery";
@@ -12,11 +14,12 @@ import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <>
+    <UnitProvider>
       <Navbar />
       <main>
         <Hero />
         <TrustBar />
+        <UnitSelector />
         <About />
         <Features />
         <Gallery />
@@ -26,6 +29,6 @@ export default function App() {
         <FinalCTA />
       </main>
       <Footer />
-    </>
+    </UnitProvider>
   );
 }

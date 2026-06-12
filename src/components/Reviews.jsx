@@ -1,4 +1,5 @@
 import { Star, BadgeCheck } from "lucide-react";
+import { useUnit } from "../context/UnitContext";
 import { siteData } from "../data/siteData";
 
 function Stars({ rating }) {
@@ -17,26 +18,29 @@ function Stars({ rating }) {
 }
 
 export default function Reviews() {
+  const { activeUnit } = useUnit();
+  const { reviews } = activeUnit;
+
   return (
     <section id="reviews" className="bg-warm py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <span className="inline-block rounded-full bg-amber/10 px-4 py-1 text-xs font-semibold uppercase tracking-wider text-amber">
-            Guest Reviews
+            {activeUnit.name} Reviews
           </span>
           <h2 className="mt-4 font-heading text-3xl font-bold text-cocoa sm:text-4xl">
-            {siteData.reviews.headline}
+            What Guests Say
           </h2>
           <div className="mt-4 flex items-center justify-center gap-3">
             <Stars rating={5} />
             <span className="text-sm font-semibold text-cocoa">
-              {siteData.rating} &middot; {siteData.reviewCount} reviews
+              {siteData.rating} &middot; {siteData.reviewCount} reviews across all listings
             </span>
           </div>
         </div>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {siteData.reviews.items.map((review) => (
+        <div className="mt-14 grid gap-6 sm:grid-cols-2">
+          {reviews.items.map((review) => (
             <div
               key={review.name}
               className="flex flex-col rounded-2xl bg-white p-6 shadow-sm"

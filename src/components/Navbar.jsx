@@ -2,10 +2,12 @@ import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { Menu, X } from "lucide-react";
 import { siteData } from "../data/siteData";
+import { useUnit } from "../context/UnitContext";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const { activeUnit } = useUnit();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 48);
@@ -48,12 +50,12 @@ export default function Navbar() {
               </Link>
             ))}
             <a
-              href={siteData.airbnbUrl}
+              href={activeUnit.airbnbUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-full bg-amber px-5 py-2 text-sm font-semibold text-white shadow-md transition-all hover:bg-clay-dark hover:shadow-lg"
             >
-              Book on Airbnb
+              Book {activeUnit.shortName}
             </a>
           </div>
 
@@ -88,12 +90,12 @@ export default function Navbar() {
               </Link>
             ))}
             <a
-              href={siteData.airbnbUrl}
+              href={activeUnit.airbnbUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-2 inline-block rounded-full bg-amber px-6 py-3 text-center text-sm font-semibold text-white shadow-md transition-all hover:bg-clay-dark"
             >
-              Book on Airbnb
+              Book {activeUnit.shortName}
             </a>
           </div>
         </div>

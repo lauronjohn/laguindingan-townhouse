@@ -1,8 +1,11 @@
 import { siteData } from "../data/siteData";
 import { Link } from "react-scroll";
 import { ChevronDown } from "lucide-react";
+import { useUnit } from "../context/UnitContext";
 
 export default function Hero() {
+  const { activeUnit } = useUnit();
+
   return (
     <section id="hero" className="relative flex min-h-screen items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
@@ -27,14 +30,15 @@ export default function Hero() {
         </p>
 
         <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-          <a
-            href={siteData.airbnbUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-full bg-amber px-8 py-4 text-base font-semibold text-white shadow-lg transition-all hover:bg-clay-dark hover:shadow-xl hover:scale-105"
+          <Link
+            to="unit-selector"
+            smooth
+            duration={700}
+            offset={-80}
+            className="cursor-pointer rounded-full bg-amber px-8 py-4 text-base font-semibold text-white shadow-lg transition-all hover:bg-clay-dark hover:shadow-xl hover:scale-105"
           >
             {siteData.hero.ctaPrimary}
-          </a>
+          </Link>
           <Link
             to="about"
             smooth

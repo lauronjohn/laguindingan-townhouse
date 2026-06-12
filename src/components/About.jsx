@@ -1,24 +1,28 @@
+import { useUnit } from "../context/UnitContext";
 import { siteData } from "../data/siteData";
 import { Award } from "lucide-react";
 
 export default function About() {
+  const { activeUnit } = useUnit();
+  const { about } = activeUnit;
+
   return (
     <section id="about" className="py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
           <div className="animate-fade-up">
             <span className="mb-3 inline-block rounded-full bg-sage/10 px-4 py-1 text-xs font-semibold uppercase tracking-wider text-sage">
-              About the Property
+              {activeUnit.name} &middot; {activeUnit.badge}
             </span>
             <h2 className="mt-4 font-heading text-3xl font-bold text-cocoa sm:text-4xl">
-              {siteData.about.headline}
+              {about.headline}
             </h2>
             <p className="mt-6 leading-relaxed text-cocoa/70">
-              {siteData.about.description}
+              {about.description}
             </p>
 
-            <div className="mt-8 grid grid-cols-4 gap-4">
-              {siteData.about.stats.map((stat) => (
+            <div className="mt-8 grid grid-cols-3 gap-4">
+              {about.stats.map((stat) => (
                 <div
                   key={stat.label}
                   className="rounded-2xl bg-warm px-3 py-4 text-center shadow-sm"
@@ -51,8 +55,8 @@ export default function About() {
           <div className="relative animate-fade-in">
             <div className="overflow-hidden rounded-3xl shadow-xl">
               <img
-                src={siteData.about.image}
-                alt="Laguindingan Townhouse interior"
+                src={about.image}
+                alt={`${activeUnit.name} interior`}
                 className="h-auto w-full object-cover"
                 loading="lazy"
               />
