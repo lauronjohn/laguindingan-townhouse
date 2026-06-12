@@ -41,13 +41,12 @@ export default function Location() {
         <div className="mt-12 overflow-hidden rounded-3xl shadow-lg">
           <iframe
             title="Laguindingan Townhouse Location"
-            src={`https://www.google.com/maps?q=${siteData.location.lat},${siteData.location.lng}&z=15&output=embed`}
+            src={`https://www.openstreetmap.org/export/embed.html?bbox=${siteData.location.lng - 0.02}%2C${siteData.location.lat - 0.01}%2C${siteData.location.lng + 0.02}%2C${siteData.location.lat + 0.01}&layer=mapnik&marker=${siteData.location.lat}%2C${siteData.location.lng}`}
             width="100%"
             height="400"
             style={{ border: 0 }}
             allowFullScreen=""
             loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
             className="h-[400px] w-full"
           />
         </div>
