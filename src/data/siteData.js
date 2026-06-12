@@ -24,17 +24,17 @@ export const siteData = {
     headline: "Your Home Base in Laguindingan",
     subheadline: "Minutes from the Airport",
     description:
-      "A 2-storey townhouse offering three booking options — each with 3 bedrooms, 3 private baths, and different bed configurations for your group. Hosted by Superhost Aldwin Lauron.",
+      "A 2-storey townhouse with three distinct homes under one roof — each with 3 bedrooms, 3 private baths, and ample space for groups. Hosted by Superhost Aldwin Lauron.",
     image:
-      "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=1600&q=80",
-    ctaPrimary: "Choose Your Setup",
+      "src/assets/images/townhouse.jpg",
+    ctaPrimary: "Find Your Space",
     ctaSecondary: "Explore the Property",
   },
 
   host: {
     name: "Aldwin Lauron",
     photo:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+      "src/assets/images/host.jpg",
     since: 2019,
     bio: "Aldwin is a Superhost with over 100 reviews across his listings. He responds to every inquiry within an hour and takes pride in making every guest feel at home in Laguindingan.",
   },
@@ -49,9 +49,9 @@ export const siteData = {
         "https://www.airbnb.com/rooms/929227620217637839?guests=1&adults=1&s=67&unique_share_id=51a44def-9841-4f01-b4a3-9ef41b504226",
       badge: "3 Beds",
       about: {
-        headline: "Door 1 — Standard Setup",
+        headline: "Door 1 — The Cozy Retreat",
         description:
-          "Welcome to Laguindingan Townhouse! This 2-storey townhouse is conveniently located just 5 minutes from the airport. Door 1 is the standard configuration with 3 beds — perfect for families or small groups who want a comfortable and reliable stay close to the terminal.",
+          "Welcome to Door 1 — a warm and inviting space in the townhouse with 3 comfortable beds. Located just 5 minutes from the airport, this home is perfect for families or small groups looking for a reliable, cozy stay close to the terminal.",
         stats: [
           { value: "3", label: "Bedrooms" },
           { value: "3", label: "Beds" },
@@ -148,9 +148,9 @@ export const siteData = {
         "https://www.airbnb.com/rooms/1060755269874760815?guests=1&adults=1&s=67&unique_share_id=bf4f4c41-04a7-482a-aecb-6aa99b60e4d1",
       badge: "6 Beds",
       about: {
-        headline: "Door 2 — Max Capacity Setup",
+        headline: "Door 2 — The Group Haven",
         description:
-          "This 2-storey townhouse configuration comes with 6 beds — ideal for larger groups who need maximum sleeping space. Conveniently located just 6 minutes from the airport with a spacious living room, dining area, and all the essentials for a comfortable group stay.",
+          "Door 2 is built for bigger gatherings — with 6 beds spread across the townhouse, a spacious living room, and a full dining area. Just 6 minutes from the airport, it's the go-to choice for large families or groups traveling together.",
         stats: [
           { value: "3", label: "Bedrooms" },
           { value: "6", label: "Beds" },
@@ -247,9 +247,9 @@ export const siteData = {
         "https://www.airbnb.com/rooms/1374322181329569137?source_impression_id=p3_1781284139_P3Dg3PZr_vkJ-OeU",
       badge: "4 Beds",
       about: {
-        headline: "Door 3 — Premium Setup",
+        headline: "Door 3 — The Suite Escape",
         description:
-          "This spacious home features three air-conditioned bedrooms including a master suite with a private balcony. Enjoy a large living room, modern amenities, and 4 beds — ideal for families or groups who want a little extra comfort and style during their stay near Laguindingan Airport.",
+          "Door 3 is the elevated pick — featuring three air-conditioned bedrooms including a master suite with a private balcony. With 4 beds, a large living room, and refined touches throughout, it's ideal for those who want a little extra style near Laguindingan Airport.",
         stats: [
           { value: "3", label: "Bedrooms" },
           { value: "4", label: "Beds" },

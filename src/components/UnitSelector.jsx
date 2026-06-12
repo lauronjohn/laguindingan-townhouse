@@ -8,13 +8,13 @@ export default function UnitSelector() {
     <section id="unit-selector" className="bg-white py-10">
       <div className="mx-auto max-w-3xl px-4 text-center">
         <span className="mb-2 inline-block rounded-full bg-clay/10 px-4 py-1 text-xs font-semibold uppercase tracking-wider text-clay">
-          Choose Your Setup
+          Find Your Space
         </span>
         <h2 className="mt-3 font-heading text-2xl font-bold text-cocoa sm:text-3xl">
-          Which Configuration Fits Your Group?
+          Which Home Fits Your Group?
         </h2>
         <p className="mx-auto mt-3 max-w-xl text-sm text-cocoa/60">
-          All three options are the same 2-storey townhouse near the airport — choose the bed count that fits your group best.
+          Three distinct homes in the same 2-storey townhouse near the airport — each with its own layout, bed count, and character.
         </p>
 
         <div className="mt-8 grid gap-4 sm:grid-cols-3">
