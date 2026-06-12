@@ -41,7 +41,7 @@ export const siteData = {
 
   units: [
     {
-      id: "door-1",
+      id: "unit-1",
       name: "Unit 1",
       shortName: "Unit 1",
       rating: 4.93,
@@ -204,7 +204,7 @@ export const siteData = {
       },
     },
     {
-      id: "door-2",
+      id: "unit-2",
       name: "Unit 2",
       shortName: "Unit 2",
       rating: 4.95,
@@ -379,7 +379,7 @@ export const siteData = {
       },
     },
     {
-      id: "door-3",
+      id: "unit-3",
       name: "Unit 3",
       shortName: "Unit 3",
       rating: 4.9,
