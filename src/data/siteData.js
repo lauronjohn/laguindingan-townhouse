@@ -42,16 +42,16 @@ export const siteData = {
   units: [
     {
       id: "door-1",
-      name: "Door 1",
+      name: "Unit 1",
       shortName: "Unit 1",
       rating: 4.93,
       airbnbUrl:
         "https://www.airbnb.com/rooms/929227620217637839?guests=1&adults=1&s=67&unique_share_id=51a44def-9841-4f01-b4a3-9ef41b504226",
       badge: "3 Beds",
       about: {
-        headline: "Door 1 — The Cozy Retreat",
+        headline: "Unit 1 — The Cozy Retreat",
         description:
-          "Welcome to Door 1 — a warm and inviting space in the townhouse with 3 comfortable beds. Located just 5 minutes from the airport, this home is perfect for families or small groups looking for a reliable, cozy stay close to the terminal.",
+          "Welcome to Unit 1 — a warm and inviting space in the townhouse with 3 comfortable beds. Located just 5 minutes from the airport, this home is perfect for families or small groups looking for a reliable, cozy stay close to the terminal.",
         stats: [
           { value: "3", label: "Bedrooms" },
           { value: "3", label: "Beds" },
@@ -61,7 +61,7 @@ export const siteData = {
           "https://a0.muscache.com/im/pictures/miso/Hosting-929227620217637839/original/cd56df60-e061-424f-b9f5-b997e774bd21.jpeg?im_w=720",
       },
       features: {
-        headline: "Door 1 Amenities",
+        headline: "Unit 1 Amenities",
         items: [
           {
             icon: "Wifi",
@@ -96,7 +96,7 @@ export const siteData = {
         ],
       },
       gallery: {
-        headline: "Inside Door 1",
+        headline: "Inside Unit 1",
         images: [
           {
             src: "https://a0.muscache.com/im/pictures/miso/Hosting-929227620217637839/original/cd56df60-e061-424f-b9f5-b997e774bd21.jpeg?im_w=1200",
@@ -205,16 +205,16 @@ export const siteData = {
     },
     {
       id: "door-2",
-      name: "Door 2",
+      name: "Unit 2",
       shortName: "Unit 2",
       rating: 4.95,
       airbnbUrl:
         "https://www.airbnb.com/rooms/1060755269874760815?guests=1&adults=1&s=67&unique_share_id=bf4f4c41-04a7-482a-aecb-6aa99b60e4d1",
       badge: "6 Beds",
       about: {
-        headline: "Door 2 — The Group Haven",
+        headline: "Unit 2 — The Group Haven",
         description:
-          "Door 2 is built for bigger gatherings — with 6 beds spread across the townhouse, a spacious living room, and a full dining area. Just 6 minutes from the airport, it's the go-to choice for large families or groups traveling together.",
+          "Unit 2 is built for bigger gatherings — with 6 beds spread across the townhouse, a spacious living room, and a full dining area. Just 6 minutes from the airport, it's the go-to choice for large families or groups traveling together.",
         stats: [
           { value: "3", label: "Bedrooms" },
           { value: "6", label: "Beds" },
@@ -224,7 +224,7 @@ export const siteData = {
           "https://a0.muscache.com/im/pictures/hosting/Hosting-1060755269874760815/original/d8b6da7c-f2c9-4f4b-a47f-2aae9d883c4b.jpeg?im_w=720",
       },
       features: {
-        headline: "Door 2 Amenities",
+        headline: "Unit 2 Amenities",
         items: [
           {
             icon: "Wifi",
@@ -259,7 +259,7 @@ export const siteData = {
         ],
       },
       gallery: {
-        headline: "Inside Door 2",
+        headline: "Inside Unit 2",
         images: [
           {
             src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1374322181329569137/original/058c73e0-8993-4e7d-8e45-6bc1f4cb27d9.jpeg?im_w=1200",
@@ -380,16 +380,16 @@ export const siteData = {
     },
     {
       id: "door-3",
-      name: "Door 3",
+      name: "Unit 3",
       shortName: "Unit 3",
       rating: 4.9,
       airbnbUrl:
         "https://www.airbnb.com/rooms/1374322181329569137?source_impression_id=p3_1781284139_P3Dg3PZr_vkJ-OeU",
       badge: "4 Beds",
       about: {
-        headline: "Door 3 — The Suite Escape",
+        headline: "Unit 3 — The Suite Escape",
         description:
-          "Door 3 is the elevated pick — featuring three air-conditioned bedrooms including a master suite with a private balcony. With 4 beds, a large living room, and refined touches throughout, it's ideal for those who want a little extra style near Laguindingan Airport.",
+          "Unit 3 is the elevated pick — featuring three air-conditioned bedrooms including a master suite with a private balcony. With 4 beds, a large living room, and refined touches throughout, it's ideal for those who want a little extra style near Laguindingan Airport.",
         stats: [
           { value: "3", label: "Bedrooms" },
           { value: "4", label: "Beds" },
@@ -399,7 +399,7 @@ export const siteData = {
           "https://a0.muscache.com/im/pictures/hosting/Hosting-1374322181329569137/original/058c73e0-8993-4e7d-8e45-6bc1f4cb27d9.jpeg?im_w=720",
       },
       features: {
-        headline: "Door 3 Amenities",
+        headline: "Unit 3 Amenities",
         items: [
           {
             icon: "Wifi",
@@ -434,7 +434,7 @@ export const siteData = {
         ],
       },
       gallery: {
-        headline: "Inside Door 3",
+        headline: "Inside Unit 3",
         images: [
           {
             src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1060755269874760815/original/d8b6da7c-f2c9-4f4b-a47f-2aae9d883c4b.jpeg?im_w=1200",
