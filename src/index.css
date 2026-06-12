@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --color-clay: #C67A4B;
+  --color-amber: #D4914B;
+  --color-cream: #FEF9F3;
+  --color-warm: #FFFBF5;
+  --color-cocoa: #3D2C2A;
+  --color-sage: #8B9D83;
+  --color-clay-light: #E8C5A8;
+  --color-clay-dark: #A45D35;
+  --color-amber-light: #E8B87A;
+
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
+
+  --animate-fade-in: fade-in 0.8s ease-out;
+  --animate-fade-up: fade-up 0.8s ease-out;
+  --animate-counter: counter 2s ease-out;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes counter {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-cream);
+  color: var(--color-cocoa);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+::selection {
+  background-color: var(--color-clay-light);
+  color: var(--color-cocoa);
+}
