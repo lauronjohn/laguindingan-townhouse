@@ -1,10 +1,7 @@
-import { useUnit } from "../context/UnitContext";
 import { siteData } from "../data/siteData";
 import { Heart } from "lucide-react";
 
 export default function Footer() {
-  const { activeUnit } = useUnit();
-
   return (
     <footer className="border-t border-cocoa/5 bg-cocoa py-10">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -19,12 +16,12 @@ export default function Footer() {
           </div>
 
           <a
-            href={activeUnit.airbnbUrl}
+            href="https://www.facebook.com/profile.php?id=61576873059475"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full border border-white/20 px-4 py-2 text-sm font-medium text-white/80 transition-all hover:border-white/50 hover:text-white"
           >
-            View {activeUnit.name} on Airbnb
+            Contact Us
           </a>
         </div>
 
