@@ -262,24 +262,100 @@ export const siteData = {
         headline: "Inside Door 2",
         images: [
           {
-            src: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1200&q=80",
-            alt: "Door 2 living area",
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1374322181329569137/original/058c73e0-8993-4e7d-8e45-6bc1f4cb27d9.jpeg?im_w=1200",
+            alt: "Exterior front view",
           },
           {
-            src: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&q=80",
-            alt: "Door 2 bedroom",
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1374322181329569137/original/cc8da2b7-528b-462f-8cbd-a487f63b4853.jpeg?im_w=1200",
+            alt: "Living room overview",
           },
           {
-            src: "https://images.unsplash.com/photo-1600566753086-6f7289bf17b7?w=1200&q=80",
-            alt: "Rooftop deck access",
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1374322181329569137/original/d2379fed-ef96-4ae9-96ab-6156cae27273.jpeg?im_w=1200",
+            alt: "Living room seating",
           },
           {
-            src: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80",
-            alt: "Door 2 kitchenette",
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1374322181329569137/original/e99de4ce-cb9f-44a0-a045-9c477c9865a0.jpeg?im_w=1200",
+            alt: "Dining area",
           },
           {
-            src: "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=1200&q=80",
-            alt: "Door 2 workspace",
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1374322181329569137/original/ce24cf00-15c9-4d0a-adfe-1dc8f74277c2.jpeg?im_w=1200",
+            alt: "Kitchen and dining",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1374322181329569137/original/68cb221c-5cde-4ca7-afbb-187b2e0e4f1e.jpeg?im_w=1200",
+            alt: "Kitchen counter",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1374322181329569137/original/a5264471-dd04-476a-92fd-1ff5602cd0f1.jpeg?im_w=1200",
+            alt: "Bedroom with natural light",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1374322181329569137/original/2ee5a803-6bbf-4c95-9ef3-9a5270665f76.jpeg?im_w=1200",
+            alt: "Second bedroom",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1374322181329569137/original/e3b1fa01-bf62-4733-8abd-2559780bd142.jpeg?im_w=1200",
+            alt: "Third bedroom",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1374322181329569137/original/c3bc15df-7279-4064-a80c-9ddda8b3c1f5.jpeg?im_w=1200",
+            alt: "Bathroom with shower",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1374322181329569137/original/d783eef4-2375-40ba-869a-3b97c911a5df.jpeg?im_w=1200",
+            alt: "Second bathroom",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1374322181329569137/original/1787c66e-588c-4401-aab4-7ad217e7a9bc.jpeg?im_w=1200",
+            alt: "Third bathroom",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1374322181329569137/original/d96b784f-d2aa-48a3-952c-d2993a94ecb3.jpeg?im_w=1200",
+            alt: "Staircase and hallway",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1374322181329569137/original/f4c54529-9623-4e0e-9f45-c70737f93e5c.jpeg?im_w=1200",
+            alt: "Rooftop deck view",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1374322181329569137/original/80dae400-d7d1-4f91-b916-4ed1b5f3d29a.jpeg?im_w=1200",
+            alt: "Rooftop seating area",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1374322181329569137/original/6fd152cb-49c3-4e85-b618-0e996abf0066.jpeg?im_w=1200",
+            alt: "Workspace desk",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1374322181329569137/original/2cbf06bc-5fcc-4f79-b3cb-8afa2a2af029.jpeg?im_w=1200",
+            alt: "Living room TV area",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1374322181329569137/original/a11ab223-a7f6-402c-811f-51fa5f45edc3.jpeg?im_w=1200",
+            alt: "Dining table setup",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1374322181329569137/original/8b41a56b-3532-4db8-95a5-b257227da93e.jpeg?im_w=1200",
+            alt: "Exterior entrance",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1374322181329569137/original/854e5538-54d6-4006-83b3-8101eb472102.jpeg?im_w=1200",
+            alt: "Neighborhood street",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1374322181329569137/original/3ca57898-c1a5-44a9-9686-bfb5f5992f2e.jpeg?im_w=1200",
+            alt: "Living room wide shot",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1374322181329569137/original/fe21ba31-76cb-48ea-8535-88833c3124cd.jpeg?im_w=1200",
+            alt: "Bedroom with AC",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1374322181329569137/original/2d7aa4c3-0e95-440d-a534-a14d1d19dda3.jpeg?im_w=1200",
+            alt: "Kitchen appliances",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1374322181329569137/original/3c0f448b-39fb-4de6-bd98-8c2422bf725e.jpeg?im_w=1200",
+            alt: "Property surroundings",
           },
         ],
       },
@@ -361,24 +437,132 @@ export const siteData = {
         headline: "Inside Door 3",
         images: [
           {
-            src: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&q=80",
-            alt: "Door 3 living room",
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1060755269874760815/original/d8b6da7c-f2c9-4f4b-a47f-2aae9d883c4b.jpeg?im_w=1200",
+            alt: "Exterior front view",
           },
           {
-            src: "https://images.unsplash.com/photo-1598928506311-c55e85e1a63d?w=1200&q=80",
-            alt: "Door 3 main bedroom",
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1060755269874760815/original/db53a496-c101-4bd4-a0b6-821dd188ce2b.jpeg?im_w=1200",
+            alt: "Living room overview",
           },
           {
-            src: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1200&q=80",
-            alt: "Door 3 second bedroom",
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1060755269874760815/original/4cb398c3-7d09-4547-aee5-d5e468b5217b.jpeg?im_w=1200",
+            alt: "Living room seating area",
           },
           {
-            src: "https://images.unsplash.com/photo-1600566753086-6f7289bf17b7?w=1200&q=80",
+            src: "https://a0.muscache.com/im/pictures/miso/Hosting-1060755269874760815/original/6149058c-f8e8-4edb-a142-0c3565c2dfc4.jpeg?im_w=1200",
+            alt: "Dining area",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/miso/Hosting-1060755269874760815/original/fa360c3b-76a1-4c6b-8a01-75f0cc83b416.jpeg?im_w=1200",
+            alt: "Kitchen and dining",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/miso/Hosting-1060755269874760815/original/774280f6-5aec-4613-93a4-5a8b194d8c65.jpeg?im_w=1200",
+            alt: "Full kitchen",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1060755269874760815/original/114e6ab3-da58-4e06-844a-34af927eef6c.jpeg?im_w=1200",
+            alt: "Bedroom one",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1060755269874760815/original/533b455a-d3bd-4f6e-87e2-93527c619953.jpeg?im_w=1200",
+            alt: "Bedroom one alternate",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/miso/Hosting-1060755269874760815/original/318c6205-75d9-49bc-9724-effa182bc713.jpeg?im_w=1200",
+            alt: "Second bedroom",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/miso/Hosting-1060755269874760815/original/296564b0-7509-4bae-ac9f-46e0dc50596d.jpeg?im_w=1200",
+            alt: "Second bedroom view",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/miso/Hosting-1060755269874760815/original/0555e599-23f6-4bd5-9257-18a18f9e16b7.jpeg?im_w=1200",
+            alt: "Third bedroom",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/miso/Hosting-1060755269874760815/original/deab36ea-ba11-4060-8e8d-646c18816d26.jpeg?im_w=1200",
+            alt: "Third bedroom alternate",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/miso/Hosting-1060755269874760815/original/3a799c81-09ae-4771-a88f-c8f5decdf025.jpeg?im_w=1200",
+            alt: "Bathroom with shower",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1060755269874760815/original/b2997560-a876-40df-933a-353bc35b18c4.jpeg?im_w=1200",
+            alt: "Second bathroom",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1060755269874760815/original/092e17cb-db18-45a8-831e-03342feb3319.jpeg?im_w=1200",
+            alt: "Third bathroom",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1060755269874760815/original/420e5488-3cd3-498d-982d-703bbbba35dd.jpeg?im_w=1200",
+            alt: "Staircase area",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1060755269874760815/original/134389b0-66bd-4efa-8172-320e10f04e90.jpeg?im_w=1200",
             alt: "Rooftop deck",
           },
           {
-            src: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80",
-            alt: "Door 3 kitchen area",
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1060755269874760815/original/31fd872d-e28f-4786-ab58-e7e57d9a2a05.jpeg?im_w=1200",
+            alt: "Rooftop seating",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1060755269874760815/original/e325365c-9c07-4fff-986e-b17e6d6df0af.jpeg?im_w=1200",
+            alt: "Dedicated workspace",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1060755269874760815/original/d5f74389-5507-41ab-90bd-649fbbcf9a8b.jpeg?im_w=1200",
+            alt: "Living room TV",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/miso/Hosting-1060755269874760815/original/2d36f2c3-cb8d-4f85-a186-b90968510fb3.jpeg?im_w=1200",
+            alt: "Dining table closeup",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1060755269874760815/original/38867c08-aac5-4399-a20d-724e4072ef69.jpeg?im_w=1200",
+            alt: "Exterior entrance",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/miso/Hosting-1060755269874760815/original/6cf61b9a-54f0-4189-8f4e-327874d40bb5.jpeg?im_w=1200",
+            alt: "Neighborhood surroundings",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1060755269874760815/original/36cb48bb-8615-4cb4-af97-ec61b667c9e1.jpeg?im_w=1200",
+            alt: "Living room wide",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1060755269874760815/original/eaffbd4f-cc07-4d6d-924f-2115cf19c6c3.jpeg?im_w=1200",
+            alt: "Bedroom with AC",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1060755269874760815/original/5543dedd-f478-4e59-b283-62ba89631d57.jpeg?im_w=1200",
+            alt: "Kitchen countertop",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1060755269874760815/original/cca32457-c874-4f0c-8a89-2a9560b59991.jpeg?im_w=1200",
+            alt: "Hallway view",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1060755269874760815/original/e150544f-461c-41eb-bf43-9d70570b5c8e.jpeg?im_w=1200",
+            alt: "Property exterior side",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1060755269874760815/original/9d3eb0e0-ae49-47ff-b131-478e371a1529.jpeg?im_w=1200",
+            alt: "Floor plan",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/hosting/Hosting-1060755269874760815/original/6f90e934-fc40-4ce8-8394-d72ef1b51b00.jpeg?im_w=1200",
+            alt: "Amenities overview",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/miso/Hosting-1060755269874760815-Amenities/original/3e0be6cb-1a08-4cdf-85ba-02b8931294a5.jpeg?im_w=1200",
+            alt: "Amenity highlight",
+          },
+          {
+            src: "https://a0.muscache.com/im/pictures/miso/Hosting-1060755269874760815-Amenities/original/cba7e7e5-0727-4daf-b57f-ab4fcad53c2e.jpeg?im_w=1200",
+            alt: "Amenity detail",
           },
         ],
       },
