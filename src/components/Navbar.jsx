@@ -2,12 +2,10 @@ import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { Menu, X } from "lucide-react";
 import { siteData } from "../data/siteData";
-import { useUnit } from "../context/UnitContext";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const { activeUnit } = useUnit();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 48);
@@ -53,14 +51,15 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <a
-              href={activeUnit.airbnbUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="unit-selector"
+              smooth
+              duration={600}
+              offset={-80}
               className="rounded-full bg-amber px-5 py-2 text-sm font-semibold text-white shadow-md transition-all hover:bg-clay-dark hover:shadow-lg"
             >
-              Book {activeUnit.shortName}
-            </a>
+              Book Now
+            </Link>
           </div>
 
           <button
@@ -93,14 +92,16 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <a
-              href={activeUnit.airbnbUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="unit-selector"
+              smooth
+              duration={600}
+              offset={-80}
+              onClick={() => setMobileOpen(false)}
               className="mt-2 inline-block rounded-full bg-amber px-6 py-3 text-center text-sm font-semibold text-white shadow-md transition-all hover:bg-clay-dark"
             >
-              Book {activeUnit.shortName}
-            </a>
+              Book Now
+            </Link>
           </div>
         </div>
       )}
