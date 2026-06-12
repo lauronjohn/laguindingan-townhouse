@@ -41,7 +41,7 @@ export default function Location() {
         <div className="mt-12 overflow-hidden rounded-3xl shadow-lg">
           <iframe
             title="Laguindingan Townhouse Location"
-            src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qby0C7S2NDTCLxBU3LMpMq06qJBEk&q=${siteData.location.lat},${siteData.location.lng}&zoom=15`}
+            src={`https://www.google.com/maps?q=${siteData.location.lat},${siteData.location.lng}&z=15&output=embed`}
             width="100%"
             height="400"
             style={{ border: 0 }}
