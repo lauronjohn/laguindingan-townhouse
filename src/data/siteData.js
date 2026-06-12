@@ -26,7 +26,7 @@ export const siteData = {
     description:
       "A 2-storey townhouse with three distinct homes under one roof — each with 3 bedrooms, 3 private baths, and ample space for groups. Hosted by Superhost Aldwin Lauron.",
     image:
-      "src/assets/images/townhouse.jpg",
+      "/images/townhouse.jpg",
     ctaPrimary: "Find Your Space",
     ctaSecondary: "Explore the Property",
   },
@@ -34,7 +34,7 @@ export const siteData = {
   host: {
     name: "Aldwin Lauron",
     photo:
-      "src/assets/images/host.jpg",
+      "/images/host.jpg",
     since: 2019,
     bio: "Aldwin is a Superhost with over 100 reviews across his listings. He responds to every inquiry within an hour and takes pride in making every guest feel at home in Laguindingan.",
   },
