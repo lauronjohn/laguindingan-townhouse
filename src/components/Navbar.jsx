@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { Menu, X } from "lucide-react";
 import { siteData } from "../data/siteData";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -34,7 +35,7 @@ export default function Navbar() {
             {siteData.name}
           </Link>
 
-          <div className="hidden items-center gap-8 md:flex">
+          <div className="hidden items-center gap-6 md:flex">
             {siteData.nav.links.map((link) => (
               <Link
                 key={link.to}
@@ -51,6 +52,7 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
+            <ThemeToggle light={!scrolled} />
             <Link
               to="unit-selector"
               smooth
@@ -62,17 +64,19 @@ export default function Navbar() {
             </Link>
           </div>
 
-          <button
-            className="md:hidden"
-            onClick={() => setMobileOpen(!mobileOpen)}
-            aria-label="Toggle menu"
-          >
-            {mobileOpen ? (
-              <X className={`h-6 w-6 ${scrolled ? "text-cocoa" : "text-white"}`} />
-            ) : (
-              <Menu className={`h-6 w-6 ${scrolled ? "text-cocoa" : "text-white"}`} />
-            )}
-          </button>
+          <div className="flex items-center gap-2 md:hidden">
+            <ThemeToggle light={!scrolled} />
+            <button
+              onClick={() => setMobileOpen(!mobileOpen)}
+              aria-label="Toggle menu"
+            >
+              {mobileOpen ? (
+                <X className={`h-6 w-6 ${scrolled ? "text-cocoa" : "text-white"}`} />
+              ) : (
+                <Menu className={`h-6 w-6 ${scrolled ? "text-cocoa" : "text-white"}`} />
+              )}
+            </button>
+          </div>
         </div>
       </div>
 

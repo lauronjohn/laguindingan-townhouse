@@ -15,7 +15,7 @@ export default function Hero() {
           className="h-full w-full object-cover"
           loading="eager"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-cocoa/60 via-cocoa/40 to-cocoa/70" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-4xl px-4 text-center animate-fade-in">

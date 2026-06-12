@@ -19,6 +19,19 @@
   --animate-counter: counter 2s ease-out;
 }
 
+html.dark {
+  --color-cream: #171210;
+  --color-warm: #1F1915;
+  --color-white: #1F1915;
+  --color-cocoa: #D8C8BB;
+  --color-clay: #D4914B;
+  --color-amber: #E8B87A;
+  --color-sage: #A0B098;
+  --color-clay-light: #A45D35;
+  --color-clay-dark: #B8704A;
+  --color-amber-light: #C67A4B;
+}
+
 @keyframes fade-in {
   from { opacity: 0; }
   to { opacity: 1; }
