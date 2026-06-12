@@ -36,12 +36,12 @@ function CountUp({ end, suffix = "", duration = 2000 }) {
   );
 }
 
-function TrustItem({ icon: Icon, value, label, suffix = "", highlight = false }) {
+function TrustItem({ icon: Icon, value, label, staticValue, suffix = "", highlight = false }) {
   return (
     <div className="flex flex-col items-center gap-1 px-4 py-2">
       <Icon className={`h-5 w-5 ${highlight ? "text-amber" : "text-sage"}`} />
       <span className="font-heading text-2xl font-bold text-cocoa">
-        <CountUp end={value} suffix={suffix} />
+        {staticValue ? staticValue : <CountUp end={value} suffix={suffix} />}
       </span>
       <span className="text-xs font-medium uppercase tracking-wider text-cocoa/60">
         {label}
@@ -57,11 +57,11 @@ export default function TrustBar() {
         <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-10 lg:gap-16">
           <TrustItem
             icon={Star}
-            value={siteData.rating}
+            staticValue="4.9+"
             label="Average Rating"
             highlight
           />
-          <TrustItem icon={Award} value={106} label="Total Reviews" />
+          <TrustItem icon={Award} value={siteData.totalReviewCount} label="Total Reviews" />
           <div className="hidden sm:block">
             <div className="flex flex-col items-center gap-1 px-4 py-2">
               <ShieldCheck className="h-5 w-5 text-amber" />

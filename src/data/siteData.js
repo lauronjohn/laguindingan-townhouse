@@ -2,8 +2,7 @@ export const siteData = {
   name: "Laguindingan Townhouse",
   tagline: "Your Home Base in Laguindingan — Minutes from the Airport",
   hostName: "Aldwin Lauron",
-  rating: 4.93,
-  reviewCount: 106,
+  totalReviewCount: 106,
   guestFavorite: true,
   superhost: true,
   responseRate: "100%",
@@ -25,10 +24,10 @@ export const siteData = {
     headline: "Your Home Base in Laguindingan",
     subheadline: "Minutes from the Airport",
     description:
-      "A 2-storey townhouse with three private units for families and groups — hosted by Superhost Aldwin Lauron with a 4.93 rating across 106 reviews.",
+      "A 2-storey townhouse offering three booking options — each with 3 bedrooms, 3 private baths, and different bed configurations for your group. Hosted by Superhost Aldwin Lauron.",
     image:
       "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=1600&q=80",
-    ctaPrimary: "Choose Your Unit",
+    ctaPrimary: "Choose Your Setup",
     ctaSecondary: "Explore the Property",
   },
 
@@ -37,7 +36,7 @@ export const siteData = {
     photo:
       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
     since: 2019,
-    bio: "Aldwin is a Superhost with 106 reviews and a 4.93 average rating across his listings. He responds to every inquiry within an hour and takes pride in making every guest feel at home in Laguindingan.",
+    bio: "Aldwin is a Superhost with over 100 reviews across his listings. He responds to every inquiry within an hour and takes pride in making every guest feel at home in Laguindingan.",
   },
 
   units: [
@@ -45,20 +44,21 @@ export const siteData = {
       id: "door-1",
       name: "Door 1",
       shortName: "Unit 1",
+      rating: 4.93,
       airbnbUrl:
         "https://www.airbnb.com/rooms/929227620217637839?guests=1&adults=1&s=67&unique_share_id=51a44def-9841-4f01-b4a3-9ef41b504226",
-      badge: "Ground Floor",
+      badge: "3 Beds",
       about: {
-        headline: "Door 1 — Ground Floor Comfort",
+        headline: "Door 1 — Standard Setup",
         description:
-          "Located on the ground floor for easy access, Door 1 is perfect for families with older members or anyone who prefers single-level living. It offers a spacious layout with direct access to the common areas.",
+          "Welcome to Laguindingan Townhouse! This 2-storey townhouse is conveniently located just 5 minutes from the airport. Door 1 is the standard configuration with 3 beds — perfect for families or small groups who want a comfortable and reliable stay close to the terminal.",
         stats: [
-          { value: "6", label: "Guests Max" },
-          { value: "2", label: "Bedrooms" },
-          { value: "1", label: "Bathroom" },
+          { value: "3", label: "Bedrooms" },
+          { value: "3", label: "Beds" },
+          { value: "3", label: "Private Baths" },
         ],
         image:
-          "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80",
+          "https://a0.muscache.com/im/pictures/miso/Hosting-929227620217637839/original/cd56df60-e061-424f-b9f5-b997e774bd21.jpeg?im_w=720",
       },
       features: {
         headline: "Door 1 Amenities",
@@ -70,12 +70,17 @@ export const siteData = {
           },
           {
             icon: "ChefHat",
-            title: "Full Kitchen Access",
-            description: "Shared kitchen fully equipped with cookware and appliances.",
+            title: "Full Kitchen",
+            description: "Fully equipped with cookware, utensils, and appliances.",
+          },
+          {
+            icon: "Monitor",
+            title: "Dedicated Workspace",
+            description: "A quiet desk setup for remote workers and digital nomads.",
           },
           {
             icon: "Tv",
-            title: 'Smart TV',
+            title: '65" Smart TV',
             description: "Kick back with Netflix, YouTube, or local channels.",
           },
           {
@@ -87,11 +92,6 @@ export const siteData = {
             icon: "Shirt",
             title: "Washing Machine",
             description: "In-unit laundry for longer stays and fresh clothes.",
-          },
-          {
-            icon: "DoorOpen",
-            title: "Ground Floor Access",
-            description: "No stairs needed — easy entry and exit for all guests.",
           },
         ],
       },
@@ -127,14 +127,14 @@ export const siteData = {
             location: "Manila, Philippines",
             rating: 5,
             quote:
-              "Super convenient for our early morning flight! The ground floor unit was perfect for my parents — no stairs to climb.",
+              "Super convenient for our early morning flight! The house was spotless and Aldwin was incredibly responsive. Highly recommend for families.",
           },
           {
             name: "Elena",
             location: "Davao, Philippines",
             rating: 5,
             quote:
-              "Clean, comfortable, and just 5 minutes from the airport. Aldwin made check-in so easy. Will book again!",
+              "Just 5 minutes from the airport. Clean, comfortable, and Aldwin made check-in so easy. Will book again!",
           },
         ],
       },
@@ -143,20 +143,21 @@ export const siteData = {
       id: "door-2",
       name: "Door 2",
       shortName: "Unit 2",
+      rating: 4.95,
       airbnbUrl:
         "https://www.airbnb.com/rooms/1060755269874760815?guests=1&adults=1&s=67&unique_share_id=bf4f4c41-04a7-482a-aecb-6aa99b60e4d1",
-      badge: "Upper Floor",
+      badge: "6 Beds",
       about: {
-        headline: "Door 2 — Upper Floor Retreat",
+        headline: "Door 2 — Max Capacity Setup",
         description:
-          "Situated on the upper floor, Door 2 offers a bright and airy space with a dedicated workspace and a cozy layout ideal for couples, solo travelers, or small families looking for a quiet stay near the airport.",
+          "This 2-storey townhouse configuration comes with 6 beds — ideal for larger groups who need maximum sleeping space. Conveniently located just 6 minutes from the airport with a spacious living room, dining area, and all the essentials for a comfortable group stay.",
         stats: [
-          { value: "4", label: "Guests Max" },
-          { value: "1", label: "Bedroom" },
-          { value: "1", label: "Bathroom" },
+          { value: "3", label: "Bedrooms" },
+          { value: "6", label: "Beds" },
+          { value: "3", label: "Private Baths" },
         ],
         image:
-          "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+          "https://a0.muscache.com/im/pictures/hosting/Hosting-1060755269874760815/original/d8b6da7c-f2c9-4f4b-a47f-2aae9d883c4b.jpeg?im_w=720",
       },
       features: {
         headline: "Door 2 Amenities",
@@ -167,19 +168,19 @@ export const siteData = {
             description: "Reliable, high-speed internet for work or streaming.",
           },
           {
+            icon: "ChefHat",
+            title: "Full Kitchen",
+            description: "Fully equipped with cookware, utensils, and appliances.",
+          },
+          {
             icon: "Monitor",
             title: "Dedicated Workspace",
             description: "A quiet desk setup for remote workers and digital nomads.",
           },
           {
             icon: "Tv",
-            title: 'Smart TV',
-            description: "Relax and unwind with your favorite streaming apps.",
-          },
-          {
-            icon: "ChefHat",
-            title: "Full Kitchen Access",
-            description: "Shared kitchen fully equipped with cookware and appliances.",
+            title: '65" Smart TV',
+            description: "Kick back with Netflix, YouTube, or local channels.",
           },
           {
             icon: "Car",
@@ -187,9 +188,9 @@ export const siteData = {
             description: "Secure, private parking right at the property.",
           },
           {
-            icon: "Sun",
-            title: "Rooftop Deck Access",
-            description: "Enjoy the open-air rooftop for morning coffee or evening hangouts.",
+            icon: "Shirt",
+            title: "Washing Machine",
+            description: "In-unit laundry for longer stays and fresh clothes.",
           },
         ],
       },
@@ -225,14 +226,14 @@ export const siteData = {
             location: "Cebu, Philippines",
             rating: 5,
             quote:
-              "The dedicated workspace and fast internet were exactly what I needed. Peaceful neighborhood near the airport.",
+              "We were a group of 8 and had plenty of space. The rooftop deck was our favorite spot. Wi-Fi was fast and reliable throughout our stay.",
           },
           {
             name: "Kevin",
             location: "Singapore",
             rating: 5,
             quote:
-              "As a remote worker, this was the perfect stopover. Great amenities and a comfortable, clean space.",
+              "The dedicated workspace and fast internet were exactly what I needed. Peaceful neighborhood and great amenities near the airport.",
           },
         ],
       },
@@ -241,20 +242,21 @@ export const siteData = {
       id: "door-3",
       name: "Door 3",
       shortName: "Unit 3",
+      rating: 4.9,
       airbnbUrl:
-        "https://www.airbnb.com/rooms/1374322181329569137?guests=1&adults=1&s=67&unique_share_id=3df4fd82-e743-44d0-badd-f5ef13ed9cb0",
-      badge: "Upper Floor",
+        "https://www.airbnb.com/rooms/1374322181329569137?source_impression_id=p3_1781284139_P3Dg3PZr_vkJ-OeU",
+      badge: "4 Beds",
       about: {
-        headline: "Door 3 — Spacious Upper Floor Unit",
+        headline: "Door 3 — Premium Setup",
         description:
-          "The largest of the three units, Door 3 is designed for families or small groups who need extra space. Located on the upper floor with a generous layout, it's the ideal choice for those staying longer or traveling together.",
+          "This spacious home features three air-conditioned bedrooms including a master suite with a private balcony. Enjoy a large living room, modern amenities, and 4 beds — ideal for families or groups who want a little extra comfort and style during their stay near Laguindingan Airport.",
         stats: [
-          { value: "6", label: "Guests Max" },
-          { value: "2", label: "Bedrooms" },
-          { value: "1", label: "Bathroom" },
+          { value: "3", label: "Bedrooms" },
+          { value: "4", label: "Beds" },
+          { value: "3", label: "Private Baths" },
         ],
         image:
-          "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80",
+          "https://a0.muscache.com/im/pictures/hosting/Hosting-1374322181329569137/original/058c73e0-8993-4e7d-8e45-6bc1f4cb27d9.jpeg?im_w=720",
       },
       features: {
         headline: "Door 3 Amenities",
@@ -266,12 +268,17 @@ export const siteData = {
           },
           {
             icon: "ChefHat",
-            title: "Full Kitchen Access",
-            description: "Shared kitchen fully equipped with cookware and appliances.",
+            title: "Full Kitchen",
+            description: "Fully equipped with cookware, utensils, and appliances.",
+          },
+          {
+            icon: "Monitor",
+            title: "Dedicated Workspace",
+            description: "A quiet desk setup for remote workers and digital nomads.",
           },
           {
             icon: "Tv",
-            title: 'Smart TV',
+            title: '65" Smart TV',
             description: "Kick back with Netflix, YouTube, or local channels.",
           },
           {
@@ -283,11 +290,6 @@ export const siteData = {
             icon: "Shirt",
             title: "Washing Machine",
             description: "In-unit laundry for longer stays and fresh clothes.",
-          },
-          {
-            icon: "Sun",
-            title: "Rooftop Deck Access",
-            description: "Enjoy the open-air rooftop for morning coffee or evening hangouts.",
           },
         ],
       },
@@ -323,14 +325,14 @@ export const siteData = {
             location: "Manila, Philippines",
             rating: 5,
             quote:
-              "We were a family of 5 and Door 3 gave us all the space we needed. Clean, modern, and so close to the airport!",
+              "The air-conditioned master suite with private balcony was incredible. Clean, modern, and so close to the airport!",
           },
           {
             name: "James",
             location: "Cebu, Philippines",
             rating: 5,
             quote:
-              "The two bedrooms were perfect for our group. Rooftop access was the highlight — we spent every evening up there.",
+              "The extra bed setup was perfect for our family. Rooftop access was the highlight — we spent every evening up there.",
           },
         ],
       },

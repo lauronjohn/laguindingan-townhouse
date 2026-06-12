@@ -16,7 +16,7 @@ export default function FinalCTA() {
             {siteData.finalCta.headline}
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-base text-white/80 sm:text-lg">
-            {siteData.finalCta.subheadline}
+            Rated {activeUnit.rating} by guests. Hosted by a Superhost who replies within the hour.
           </p>
 
           <a

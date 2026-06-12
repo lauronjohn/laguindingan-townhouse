@@ -1,3 +1,4 @@
+import { Star } from "lucide-react";
 import { useUnit } from "../context/UnitContext";
 
 export default function UnitSelector() {
@@ -7,13 +8,13 @@ export default function UnitSelector() {
     <section id="unit-selector" className="bg-white py-10">
       <div className="mx-auto max-w-3xl px-4 text-center">
         <span className="mb-2 inline-block rounded-full bg-clay/10 px-4 py-1 text-xs font-semibold uppercase tracking-wider text-clay">
-          Choose Your Unit
+          Choose Your Setup
         </span>
         <h2 className="mt-3 font-heading text-2xl font-bold text-cocoa sm:text-3xl">
-          Which Door Is Right for You?
+          Which Configuration Fits Your Group?
         </h2>
         <p className="mx-auto mt-3 max-w-xl text-sm text-cocoa/60">
-          All three units are in the same townhouse, just 5 minutes from Laguindingan Airport. Pick the one that fits your group best.
+          All three options are the same 2-storey townhouse near the airport — choose the bed count that fits your group best.
         </p>
 
         <div className="mt-8 grid gap-4 sm:grid-cols-3">
@@ -45,6 +46,12 @@ export default function UnitSelector() {
                     }`}
                   >
                     {unit.badge}
+                  </span>
+                </div>
+                <div className="mt-2 flex items-center gap-1">
+                  <Star className="h-3.5 w-3.5 fill-amber text-amber" />
+                  <span className="text-sm font-semibold text-cocoa">
+                    {unit.rating}
                   </span>
                 </div>
                 <div className="mt-3 flex gap-4 text-sm">

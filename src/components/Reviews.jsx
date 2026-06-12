@@ -34,7 +34,7 @@ export default function Reviews() {
           <div className="mt-4 flex items-center justify-center gap-3">
             <Stars rating={5} />
             <span className="text-sm font-semibold text-cocoa">
-              {siteData.rating} &middot; {siteData.reviewCount} reviews across all listings
+              {activeUnit.rating} &middot; {siteData.totalReviewCount} reviews across all listings
             </span>
           </div>
         </div>
