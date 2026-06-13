@@ -134,12 +134,12 @@ export const translations = {
         review1:
           "Just 5 minutes from the airport. Clean, comfortable, and Aldwin made check-in so easy. Will book again!",
         features: {
-          "Fast Fiber Wi-Fi": "Reliable, high-speed internet for work or streaming.",
-          "Full Kitchen": "Fully equipped with cookware, utensils, and appliances.",
-          "Dedicated Workspace": "A quiet desk setup for remote workers and digital nomads.",
-          '65" Smart TV': "Kick back with Netflix, YouTube, or local channels.",
-          "Free Parking": "Secure, private parking right at the property.",
-          "Washing Machine": "In-unit laundry for longer stays and fresh clothes.",
+          "Fast Fiber Wi-Fi": { title: "Fast Fiber Wi-Fi", desc: "Reliable, high-speed internet for work or streaming." },
+          "Full Kitchen": { title: "Full Kitchen", desc: "Fully equipped with cookware, utensils, and appliances." },
+          "Dedicated Workspace": { title: "Dedicated Workspace", desc: "A quiet desk setup for remote workers and digital nomads." },
+          '65" Smart TV': { title: '65" Smart TV', desc: "Kick back with Netflix, YouTube, or local channels." },
+          "Free Parking": { title: "Free Parking", desc: "Secure, private parking right at the property." },
+          "Washing Machine": { title: "Washing Machine", desc: "In-unit laundry for longer stays and fresh clothes." },
         },
       },
       "unit-2": {
@@ -153,12 +153,12 @@ export const translations = {
         review1:
           "The dedicated workspace and fast internet were exactly what I needed. Peaceful neighborhood and great amenities near the airport.",
         features: {
-          "Fast Fiber Wi-Fi": "Reliable, high-speed internet for work or streaming.",
-          "Full Kitchen": "Fully equipped with cookware, utensils, and appliances.",
-          "Dedicated Workspace": "A quiet desk setup for remote workers and digital nomads.",
-          '65" Smart TV': "Kick back with Netflix, YouTube, or local channels.",
-          "Free Parking": "Secure, private parking right at the property.",
-          "Washing Machine": "In-unit laundry for longer stays and fresh clothes.",
+          "Fast Fiber Wi-Fi": { title: "Fast Fiber Wi-Fi", desc: "Reliable, high-speed internet for work or streaming." },
+          "Full Kitchen": { title: "Full Kitchen", desc: "Fully equipped with cookware, utensils, and appliances." },
+          "Dedicated Workspace": { title: "Dedicated Workspace", desc: "A quiet desk setup for remote workers and digital nomads." },
+          '65" Smart TV': { title: '65" Smart TV', desc: "Kick back with Netflix, YouTube, or local channels." },
+          "Free Parking": { title: "Free Parking", desc: "Secure, private parking right at the property." },
+          "Washing Machine": { title: "Washing Machine", desc: "In-unit laundry for longer stays and fresh clothes." },
         },
       },
       "unit-3": {
@@ -172,12 +172,12 @@ export const translations = {
         review1:
           "The extra bed setup was perfect for our family. Rooftop access was the highlight — we spent every evening up there.",
         features: {
-          "Fast Fiber Wi-Fi": "Reliable, high-speed internet for work or streaming.",
-          "Full Kitchen": "Fully equipped with cookware, utensils, and appliances.",
-          "Dedicated Workspace": "A quiet desk setup for remote workers and digital nomads.",
-          '65" Smart TV': "Kick back with Netflix, YouTube, or local channels.",
-          "Free Parking": "Secure, private parking right at the property.",
-          "Washing Machine": "In-unit laundry for longer stays and fresh clothes.",
+          "Fast Fiber Wi-Fi": { title: "Fast Fiber Wi-Fi", desc: "Reliable, high-speed internet for work or streaming." },
+          "Full Kitchen": { title: "Full Kitchen", desc: "Fully equipped with cookware, utensils, and appliances." },
+          "Dedicated Workspace": { title: "Dedicated Workspace", desc: "A quiet desk setup for remote workers and digital nomads." },
+          '65" Smart TV': { title: '65" Smart TV', desc: "Kick back with Netflix, YouTube, or local channels." },
+          "Free Parking": { title: "Free Parking", desc: "Secure, private parking right at the property." },
+          "Washing Machine": { title: "Washing Machine", desc: "In-unit laundry for longer stays and fresh clothes." },
         },
       },
     },
@@ -318,12 +318,12 @@ export const translations = {
         review1:
           "距离机场仅5分钟。干净、舒适，Aldwin 让入住变得非常便捷。一定会再次预订！",
         features: {
-          "Fast Fiber Wi-Fi": "高速光纤网络，适合办公或在线观影。",
-          "Full Kitchen": "设备齐全，配有炊具、餐具和电器。",
-          "Dedicated Workspace": "专为远程工作者和数字游民准备的安静办公区。",
-          '65" Smart TV': "享受 Netflix、YouTube 或本地频道。",
-          "Free Parking": "物业内安全私密的停车位。",
-          "Washing Machine": "适合长住的室内洗衣设备。",
+          "Fast Fiber Wi-Fi": { title: "高速光纤网络", desc: "适合办公或在线观影的高速网络。" },
+          "Full Kitchen": { title: "全套厨房", desc: "设备齐全，配有炊具、餐具和电器。" },
+          "Dedicated Workspace": { title: "专用工作区", desc: "专为远程工作者和数字游民准备的安静办公区。" },
+          '65" Smart TV': { title: "65寸智能电视", desc: "享受 Netflix、YouTube 或本地频道。" },
+          "Free Parking": { title: "免费停车", desc: "物业内安全私密的停车位。" },
+          "Washing Machine": { title: "洗衣机", desc: "适合长住的室内洗衣设备。" },
         },
       },
       "unit-2": {
@@ -337,12 +337,12 @@ export const translations = {
         review1:
           "专用的工作区和快速的网络正是我需要的。靠近机场，社区安静，设施完善。",
         features: {
-          "Fast Fiber Wi-Fi": "高速光纤网络，适合办公或在线观影。",
-          "Full Kitchen": "设备齐全，配有炊具、餐具和电器。",
-          "Dedicated Workspace": "专为远程工作者和数字游民准备的安静办公区。",
-          '65" Smart TV': "享受 Netflix、YouTube 或本地频道。",
-          "Free Parking": "物业内安全私密的停车位。",
-          "Washing Machine": "适合长住的室内洗衣设备。",
+          "Fast Fiber Wi-Fi": { title: "高速光纤网络", desc: "适合办公或在线观影的高速网络。" },
+          "Full Kitchen": { title: "全套厨房", desc: "设备齐全，配有炊具、餐具和电器。" },
+          "Dedicated Workspace": { title: "专用工作区", desc: "专为远程工作者和数字游民准备的安静办公区。" },
+          '65" Smart TV': { title: "65寸智能电视", desc: "享受 Netflix、YouTube 或本地频道。" },
+          "Free Parking": { title: "免费停车", desc: "物业内安全私密的停车位。" },
+          "Washing Machine": { title: "洗衣机", desc: "适合长住的室内洗衣设备。" },
         },
       },
       "unit-3": {
@@ -356,12 +356,12 @@ export const translations = {
         review1:
           "增加的床位非常适合我们一家人。屋顶通道是亮点 — 我们每晚都在上面度过。",
         features: {
-          "Fast Fiber Wi-Fi": "高速光纤网络，适合办公或在线观影。",
-          "Full Kitchen": "设备齐全，配有炊具、餐具和电器。",
-          "Dedicated Workspace": "专为远程工作者和数字游民准备的安静办公区。",
-          '65" Smart TV': "享受 Netflix、YouTube 或本地频道。",
-          "Free Parking": "物业内安全私密的停车位。",
-          "Washing Machine": "适合长住的室内洗衣设备。",
+          "Fast Fiber Wi-Fi": { title: "高速光纤网络", desc: "适合办公或在线观影的高速网络。" },
+          "Full Kitchen": { title: "全套厨房", desc: "设备齐全，配有炊具、餐具和电器。" },
+          "Dedicated Workspace": { title: "专用工作区", desc: "专为远程工作者和数字游民准备的安静办公区。" },
+          '65" Smart TV': { title: "65寸智能电视", desc: "享受 Netflix、YouTube 或本地频道。" },
+          "Free Parking": { title: "免费停车", desc: "物业内安全私密的停车位。" },
+          "Washing Machine": { title: "洗衣机", desc: "适合长住的室内洗衣设备。" },
         },
       },
     },

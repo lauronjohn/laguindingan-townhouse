@@ -3,6 +3,12 @@ import { siteData } from "../data/siteData";
 import { Award } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
 
+const statKeyMap = {
+  Bedrooms: "about.bedrooms",
+  Beds: "about.beds",
+  "Private Baths": "about.privateBaths",
+};
+
 export default function About() {
   const { activeUnit } = useUnit();
   const { about } = activeUnit;
@@ -28,7 +34,7 @@ export default function About() {
                 <div key={stat.label} className="rounded-2xl bg-warm px-3 py-4 text-center shadow-sm">
                   <span className="block font-heading text-2xl font-bold text-clay">{stat.value}</span>
                   <span className="mt-1 block text-xs font-medium uppercase tracking-wider text-cocoa/50">
-                    {stat.label}
+                    {t(statKeyMap[stat.label] || "about.bedrooms")}
                   </span>
                 </div>
               ))}

@@ -29,8 +29,12 @@ export default function Features() {
                 <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-clay/10 text-clay transition-colors group-hover:bg-clay group-hover:text-white">
                   <Icon className="h-6 w-6" />
                 </div>
-                <h3 className="font-heading text-lg font-semibold text-cocoa">{item.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-cocoa/60">{item.description}</p>
+                <h3 className="font-heading text-lg font-semibold text-cocoa">
+                  {tf(`units.${activeUnit.id}.features.${item.title}.title`, item.title)}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-cocoa/60">
+                  {tf(`units.${activeUnit.id}.features.${item.title}.desc`, item.description)}
+                </p>
               </div>
             );
           })}

@@ -2,6 +2,12 @@ import { Star } from "lucide-react";
 import { useUnit } from "../context/UnitContext";
 import { useLanguage } from "../context/LanguageContext";
 
+const statKeyMap = {
+  Bedrooms: "about.bedrooms",
+  Beds: "about.beds",
+  "Private Baths": "about.privateBaths",
+};
+
 export default function UnitSelector() {
   const { activeUnit, setActiveUnit, units } = useUnit();
   const { t } = useLanguage();
@@ -48,7 +54,7 @@ export default function UnitSelector() {
                     {unit.about.stats.map((stat) => (
                       <span key={stat.label} className="text-cocoa/50">
                         <strong className="text-cocoa">{stat.value}</strong>{" "}
-                        {stat.label}
+                        {t(statKeyMap[stat.label] || "about.bedrooms")}
                       </span>
                     ))}
                   </div>
