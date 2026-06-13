@@ -2,9 +2,11 @@ import { siteData } from "../data/siteData";
 import { Link } from "react-scroll";
 import { ChevronDown } from "lucide-react";
 import { useUnit } from "../context/UnitContext";
+import { useTheme } from "../context/ThemeContext";
 
 export default function Hero() {
   const { activeUnit } = useUnit();
+  const { dark } = useTheme();
 
   return (
     <section id="hero" className="relative flex min-h-screen items-center justify-center overflow-hidden">
@@ -20,20 +22,20 @@ export default function Hero() {
 
       <div className="relative z-10 mx-auto max-w-4xl px-4 text-center animate-fade-in">
         <p
-          className="mb-3 font-body text-sm font-semibold uppercase tracking-[0.2em] text-white"
-          style={{ textShadow: "0 2px 8px rgba(0,0,0,0.7)" }}
+          className={`mb-3 font-body text-sm font-semibold uppercase tracking-[0.2em] ${dark ? "text-cocoa" : "text-white"}`}
+          style={{ textShadow: dark ? "none" : "0 2px 8px rgba(0,0,0,0.7)" }}
         >
           {siteData.hero.subheadline}
         </p>
         <h1
-          className="mb-6 font-heading text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl"
-          style={{ textShadow: "0 3px 12px rgba(0,0,0,0.8)" }}
+          className={`mb-6 font-heading text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl ${dark ? "text-cocoa" : "text-white"}`}
+          style={{ textShadow: dark ? "0 2px 8px rgba(0,0,0,0.4)" : "0 3px 12px rgba(0,0,0,0.8)" }}
         >
           {siteData.hero.headline}
         </h1>
         <p
-          className="mx-auto mb-10 max-w-2xl text-base text-white sm:text-lg"
-          style={{ textShadow: "0 2px 6px rgba(0,0,0,0.6)" }}
+          className={`mx-auto mb-10 max-w-2xl text-base sm:text-lg ${dark ? "text-cocoa/80" : "text-white"}`}
+          style={{ textShadow: dark ? "none" : "0 2px 6px rgba(0,0,0,0.6)" }}
         >
           {siteData.hero.description}
         </p>
@@ -53,7 +55,11 @@ export default function Hero() {
             smooth
             duration={700}
             offset={-80}
-            className="flex cursor-pointer items-center gap-2 rounded-full border border-white/50 px-7 py-4 text-base font-semibold text-white backdrop-blur-sm transition-all hover:border-white/80 hover:bg-white/10"
+            className={`flex cursor-pointer items-center gap-2 rounded-full border px-7 py-4 text-base font-semibold backdrop-blur-sm transition-all hover:bg-white/10 ${
+              dark
+                ? "border-cocoa/30 text-cocoa hover:border-cocoa/60"
+                : "border-white/50 text-white hover:border-white/80"
+            }`}
           >
             {siteData.hero.ctaSecondary}
             <ChevronDown className="h-4 w-4" />
@@ -62,7 +68,7 @@ export default function Hero() {
       </div>
 
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <ChevronDown className="h-6 w-6 text-white/70" />
+        <ChevronDown className={`h-6 w-6 ${dark ? "text-cocoa/40" : "text-white/60"}`} />
       </div>
     </section>
   );
