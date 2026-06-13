@@ -15,20 +15,26 @@ export default function Location() {
             {t("location.badge")}
           </span>
           <h2 className="mt-4 font-heading text-3xl font-bold text-cocoa sm:text-4xl">
-            {siteData.location.headline}
+            {t("location.headline")}
           </h2>
         </div>
 
         <div className="mt-14 grid gap-8 lg:grid-cols-3">
-          {siteData.location.highlights.map((item) => {
+          {siteData.location.highlights.map((item, i) => {
             const Icon = iconMap[item.icon] || MapPin;
+            const itemTitle = t(`location.highlights.${i}.title`);
+            const itemDesc = t(`location.highlights.${i}.description`);
             return (
               <div key={item.title} className="rounded-2xl bg-white p-6 shadow-sm">
                 <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-sage/10 text-sage">
                   <Icon className="h-5 w-5" />
                 </div>
-                <h3 className="font-heading text-lg font-semibold text-cocoa">{item.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-cocoa/60">{item.description}</p>
+                <h3 className="font-heading text-lg font-semibold text-cocoa">
+                  {itemTitle !== `location.highlights.${i}.title` ? itemTitle : item.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-cocoa/60">
+                  {itemDesc !== `location.highlights.${i}.description` ? itemDesc : item.description}
+                </p>
               </div>
             );
           })}

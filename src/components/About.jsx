@@ -6,7 +6,7 @@ import { useLanguage } from "../context/LanguageContext";
 export default function About() {
   const { activeUnit } = useUnit();
   const { about } = activeUnit;
-  const { t } = useLanguage();
+  const { t, tf } = useLanguage();
 
   return (
     <section id="about" className="py-20 sm:py-28">
@@ -17,10 +17,10 @@ export default function About() {
               {t("about.aboutProperty")}
             </span>
             <h2 className="mt-4 font-heading text-3xl font-bold text-cocoa sm:text-4xl">
-              {about.headline}
+              {tf(`units.${activeUnit.id}.aboutHeadline`, about.headline)}
             </h2>
             <p className="mt-6 leading-relaxed text-cocoa/70">
-              {about.description}
+              {tf(`units.${activeUnit.id}.aboutDescription`, about.description)}
             </p>
 
             <div className="mt-8 grid grid-cols-3 gap-4">

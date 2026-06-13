@@ -16,7 +16,7 @@ function Stars({ rating }) {
 export default function Reviews() {
   const { activeUnit } = useUnit();
   const { reviews } = activeUnit;
-  const { t } = useLanguage();
+  const { t, tf } = useLanguage();
 
   return (
     <section id="reviews" className="bg-warm py-20 sm:py-28">
@@ -37,11 +37,11 @@ export default function Reviews() {
         </div>
 
         <div className="mt-14 grid gap-6 sm:grid-cols-2">
-          {reviews.items.map((review) => (
+          {reviews.items.map((review, i) => (
             <div key={review.name} className="flex flex-col rounded-2xl bg-white p-6 shadow-sm">
               <Stars rating={review.rating} />
               <p className="mt-4 flex-1 text-sm leading-relaxed text-cocoa/70">
-                &ldquo;{review.quote}&rdquo;
+                &ldquo;{tf(`units.${activeUnit.id}.review${i}`, review.quote)}&rdquo;
               </p>
               <div className="mt-5 border-t border-cocoa/5 pt-4">
                 <div className="flex items-center gap-2">

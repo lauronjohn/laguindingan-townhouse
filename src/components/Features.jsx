@@ -7,7 +7,7 @@ const iconMap = { Wifi, ChefHat, Monitor, Tv, Car, Shirt, Sun, DoorOpen };
 export default function Features() {
   const { activeUnit } = useUnit();
   const { features } = activeUnit;
-  const { t } = useLanguage();
+  const { t, tf } = useLanguage();
 
   return (
     <section id="features" className="bg-warm py-20 sm:py-28">
@@ -17,7 +17,7 @@ export default function Features() {
             {t("features.heading")}
           </span>
           <h2 className="mt-4 font-heading text-3xl font-bold text-cocoa sm:text-4xl">
-            {features.headline}
+            {tf(`units.${activeUnit.id}.featuresHeadline`, features.headline)}
           </h2>
         </div>
 

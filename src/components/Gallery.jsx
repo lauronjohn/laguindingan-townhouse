@@ -10,7 +10,7 @@ import { useLanguage } from "../context/LanguageContext";
 export default function Gallery() {
   const { activeUnit } = useUnit();
   const { gallery } = activeUnit;
-  const { t } = useLanguage();
+  const { t, tf } = useLanguage();
 
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
@@ -40,7 +40,7 @@ export default function Gallery() {
             {t("gallery.badge")}
           </span>
           <h2 className="mt-4 font-heading text-3xl font-bold text-cocoa sm:text-4xl">
-            {gallery.headline}
+            {tf(`units.${activeUnit.id}.galleryHeadline`, gallery.headline)}
           </h2>
         </div>
 

@@ -43,8 +43,17 @@ export function LanguageProvider({ children }) {
     [lang]
   );
 
+  const tf = useCallback(
+    (path, fallback, vars = {}) => {
+      const result = t(path, vars);
+      if (result === path) return fallback;
+      return result;
+    },
+    [lang, t]
+  );
+
   return (
-    <LanguageContext.Provider value={{ lang, toggleLang, t }}>
+    <LanguageContext.Provider value={{ lang, toggleLang, t, tf }}>
       {children}
     </LanguageContext.Provider>
   );

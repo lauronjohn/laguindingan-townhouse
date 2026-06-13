@@ -21,15 +21,21 @@ export default function LocalTips() {
         </div>
 
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {siteData.localTips.items.map((item) => {
+          {siteData.localTips.items.map((item, i) => {
             const Icon = iconMap[item.icon] || Compass;
+            const itemTitle = t(`localTips.items.${i}.title`);
+            const itemDesc = t(`localTips.items.${i}.description`);
             return (
               <div key={item.title} className="group rounded-2xl bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
                 <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-clay/10 text-clay transition-colors group-hover:bg-clay group-hover:text-white">
                   <Icon className="h-5 w-5" />
                 </div>
-                <h3 className="font-heading text-lg font-semibold text-cocoa">{item.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-cocoa/60">{item.description}</p>
+                <h3 className="font-heading text-lg font-semibold text-cocoa">
+                  {itemTitle !== `localTips.items.${i}.title` ? itemTitle : item.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-cocoa/60">
+                  {itemDesc !== `localTips.items.${i}.description` ? itemDesc : item.description}
+                </p>
               </div>
             );
           })}

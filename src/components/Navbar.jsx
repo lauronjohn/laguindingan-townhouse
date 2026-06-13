@@ -7,9 +7,9 @@ import ThemeToggle from "./ThemeToggle";
 import LanguageToggle from "./LanguageToggle";
 
 const navKeyMap = {
-  units: "units",
+  "unit-selector": "units",
   about: "about",
-  amenities: "amenities",
+  features: "amenities",
   gallery: "gallery",
   reviews: "reviews",
   location: "location",
