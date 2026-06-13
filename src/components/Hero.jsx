@@ -15,17 +15,17 @@ export default function Hero() {
           className="h-full w-full object-cover"
           loading="eager"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/55 to-black/85" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-4xl px-4 text-center animate-fade-in">
-        <p className="mb-3 font-body text-sm font-medium uppercase tracking-[0.2em] text-white">
+        <p className="mb-3 font-body text-sm font-semibold uppercase tracking-[0.2em] text-white drop-shadow">
           {siteData.hero.subheadline}
         </p>
-        <h1 className="mb-6 font-heading text-4xl font-bold leading-tight text-white drop-shadow-lg sm:text-5xl lg:text-6xl">
+        <h1 className="mb-6 font-heading text-4xl font-bold leading-tight text-white drop-shadow-md sm:text-5xl lg:text-6xl">
           {siteData.hero.headline}
         </h1>
-        <p className="mx-auto mb-10 max-w-2xl text-base text-white/95 sm:text-lg">
+        <p className="mx-auto mb-10 max-w-2xl text-base text-white drop-shadow sm:text-lg">
           {siteData.hero.description}
         </p>
 
@@ -44,7 +44,7 @@ export default function Hero() {
             smooth
             duration={700}
             offset={-80}
-            className="flex cursor-pointer items-center gap-2 rounded-full border border-white/40 px-7 py-4 text-base font-medium text-white backdrop-blur-sm transition-all hover:border-white/70 hover:bg-white/10"
+            className="flex cursor-pointer items-center gap-2 rounded-full border border-white/50 px-7 py-4 text-base font-semibold text-white backdrop-blur-sm transition-all hover:border-white/80 hover:bg-white/10"
           >
             {siteData.hero.ctaSecondary}
             <ChevronDown className="h-4 w-4" />
