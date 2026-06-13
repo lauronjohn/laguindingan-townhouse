@@ -1,15 +1,18 @@
 import { Plane, TreePine, MapPin } from "lucide-react";
 import { siteData } from "../data/siteData";
+import { useLanguage } from "../context/LanguageContext";
 
 const iconMap = { Plane, TreePine, MapPin };
 
 export default function Location() {
+  const { t } = useLanguage();
+
   return (
     <section id="location" className="py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <span className="inline-block rounded-full bg-sage/10 px-4 py-1 text-xs font-semibold uppercase tracking-wider text-sage">
-            Location
+            {t("location.badge")}
           </span>
           <h2 className="mt-4 font-heading text-3xl font-bold text-cocoa sm:text-4xl">
             {siteData.location.headline}
@@ -20,19 +23,12 @@ export default function Location() {
           {siteData.location.highlights.map((item) => {
             const Icon = iconMap[item.icon] || MapPin;
             return (
-              <div
-                key={item.title}
-                className="rounded-2xl bg-white p-6 shadow-sm"
-              >
+              <div key={item.title} className="rounded-2xl bg-white p-6 shadow-sm">
                 <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-sage/10 text-sage">
                   <Icon className="h-5 w-5" />
                 </div>
-                <h3 className="font-heading text-lg font-semibold text-cocoa">
-                  {item.title}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-cocoa/60">
-                  {item.description}
-                </p>
+                <h3 className="font-heading text-lg font-semibold text-cocoa">{item.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-cocoa/60">{item.description}</p>
               </div>
             );
           })}

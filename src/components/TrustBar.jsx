@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Star, Award, MessageCircle, ShieldCheck } from "lucide-react";
 import { siteData } from "../data/siteData";
+import { useLanguage } from "../context/LanguageContext";
 
 function CountUp({ end, suffix = "", duration = 2000 }) {
   const [count, setCount] = useState(0);
@@ -51,37 +52,48 @@ function TrustItem({ icon: Icon, value, label, staticValue, suffix = "", highlig
 }
 
 export default function TrustBar() {
+  const { t } = useLanguage();
+
   return (
     <section className="border-b border-cocoa/5 bg-white py-8">
       <div className="mx-auto max-w-5xl px-4">
         <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-10 lg:gap-16">
           <TrustItem
             icon={Star}
-            staticValue="4.9+"
-            label="Average Rating"
+            staticValue={t("trustBar.rating")}
+            label={t("trustBar.averageRating")}
             highlight
           />
-          <TrustItem icon={Award} value={siteData.totalReviewCount} label="Total Reviews" />
+          <TrustItem
+            icon={Award}
+            value={siteData.totalReviewCount}
+            label={t("trustBar.totalReviews")}
+          />
           <div className="hidden sm:block">
             <div className="flex flex-col items-center gap-1 px-4 py-2">
               <ShieldCheck className="h-5 w-5 text-amber" />
               <span className="font-heading text-lg font-bold text-cocoa whitespace-nowrap">
-                Superhost
+                {t("trustBar.superhost")}
               </span>
               <span className="text-xs font-medium uppercase tracking-wider text-cocoa/60">
-                Verified
+                {t("trustBar.verified")}
               </span>
             </div>
           </div>
-          <TrustItem icon={MessageCircle} value={100} suffix="%" label="Response Rate" />
+          <TrustItem
+            icon={MessageCircle}
+            value={100}
+            suffix="%"
+            label={t("trustBar.responseRate")}
+          />
           <div className="hidden sm:block">
             <div className="flex flex-col items-center gap-1 px-4 py-2">
               <Award className="h-5 w-5 text-amber" />
               <span className="font-heading text-lg font-bold text-cocoa whitespace-nowrap">
-                Guest Favourite
+                {t("trustBar.guestFavourite")}
               </span>
               <span className="text-xs font-medium uppercase tracking-wider text-cocoa/60">
-                Airbnb Badge
+                {t("trustBar.airbnbBadge")}
               </span>
             </div>
           </div>

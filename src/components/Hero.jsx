@@ -1,19 +1,19 @@
 import { siteData } from "../data/siteData";
 import { Link } from "react-scroll";
 import { ChevronDown } from "lucide-react";
-import { useUnit } from "../context/UnitContext";
 import { useTheme } from "../context/ThemeContext";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function Hero() {
-  const { activeUnit } = useUnit();
   const { dark } = useTheme();
+  const { t } = useLanguage();
 
   return (
     <section id="hero" className="relative flex min-h-screen items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
         <img
           src={siteData.hero.image}
-          alt="Laguindingan Townhouse"
+          alt={t("hero.headline")}
           className="h-full w-full object-cover"
           loading="eager"
         />
@@ -25,19 +25,19 @@ export default function Hero() {
           className={`mb-3 font-body text-sm font-semibold uppercase tracking-[0.2em] ${dark ? "text-cocoa" : "text-white"}`}
           style={{ textShadow: dark ? "none" : "0 2px 8px rgba(0,0,0,0.7)" }}
         >
-          {siteData.hero.subheadline}
+          {t("hero.subheadline")}
         </p>
         <h1
           className={`mb-6 font-heading text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl ${dark ? "text-cocoa" : "text-white"}`}
           style={{ textShadow: dark ? "0 2px 8px rgba(0,0,0,0.4)" : "0 3px 12px rgba(0,0,0,0.8)" }}
         >
-          {siteData.hero.headline}
+          {t("hero.headline")}
         </h1>
         <p
           className={`mx-auto mb-10 max-w-2xl text-base sm:text-lg ${dark ? "text-cocoa/80" : "text-white"}`}
           style={{ textShadow: dark ? "none" : "0 2px 6px rgba(0,0,0,0.6)" }}
         >
-          {siteData.hero.description}
+          {t("hero.description")}
         </p>
 
         <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
@@ -48,7 +48,7 @@ export default function Hero() {
             offset={-80}
             className="cursor-pointer rounded-full bg-amber px-8 py-4 text-base font-semibold text-white shadow-lg transition-all hover:bg-clay-dark hover:shadow-xl hover:scale-105"
           >
-            {siteData.hero.ctaPrimary}
+            {t("hero.ctaPrimary")}
           </Link>
           <Link
             to="about"
@@ -61,7 +61,7 @@ export default function Hero() {
                 : "border-white/50 text-white hover:border-white/80"
             }`}
           >
-            {siteData.hero.ctaSecondary}
+            {t("hero.ctaSecondary")}
             <ChevronDown className="h-4 w-4" />
           </Link>
         </div>

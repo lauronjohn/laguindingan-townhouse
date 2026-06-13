@@ -1,17 +1,13 @@
 import { Star, BadgeCheck } from "lucide-react";
 import { useUnit } from "../context/UnitContext";
 import { siteData } from "../data/siteData";
+import { useLanguage } from "../context/LanguageContext";
 
 function Stars({ rating }) {
   return (
     <div className="flex gap-0.5">
       {Array.from({ length: 5 }, (_, i) => (
-        <Star
-          key={i}
-          className={`h-4 w-4 ${
-            i < rating ? "fill-amber text-amber" : "fill-none text-cocoa/20"
-          }`}
-        />
+        <Star key={i} className={`h-4 w-4 ${i < rating ? "fill-amber text-amber" : "fill-none text-cocoa/20"}`} />
       ))}
     </div>
   );
@@ -20,31 +16,29 @@ function Stars({ rating }) {
 export default function Reviews() {
   const { activeUnit } = useUnit();
   const { reviews } = activeUnit;
+  const { t } = useLanguage();
 
   return (
     <section id="reviews" className="bg-warm py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <span className="inline-block rounded-full bg-amber/10 px-4 py-1 text-xs font-semibold uppercase tracking-wider text-amber">
-            {activeUnit.name} Reviews
+            {t("reviews.badge")}
           </span>
           <h2 className="mt-4 font-heading text-3xl font-bold text-cocoa sm:text-4xl">
-            What Guests Say
+            {t("reviews.heading")}
           </h2>
           <div className="mt-4 flex items-center justify-center gap-3">
             <Stars rating={5} />
             <span className="text-sm font-semibold text-cocoa">
-              {activeUnit.rating} &middot; {siteData.totalReviewCount} reviews across all listings
+              {activeUnit.rating} · {siteData.totalReviewCount} {t("reviews.acrossAll")}
             </span>
           </div>
         </div>
 
         <div className="mt-14 grid gap-6 sm:grid-cols-2">
           {reviews.items.map((review) => (
-            <div
-              key={review.name}
-              className="flex flex-col rounded-2xl bg-white p-6 shadow-sm"
-            >
+            <div key={review.name} className="flex flex-col rounded-2xl bg-white p-6 shadow-sm">
               <Stars rating={review.rating} />
               <p className="mt-4 flex-1 text-sm leading-relaxed text-cocoa/70">
                 &ldquo;{review.quote}&rdquo;

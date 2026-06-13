@@ -2,11 +2,24 @@ import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { Menu, X } from "lucide-react";
 import { siteData } from "../data/siteData";
+import { useLanguage } from "../context/LanguageContext";
 import ThemeToggle from "./ThemeToggle";
+import LanguageToggle from "./LanguageToggle";
+
+const navKeyMap = {
+  units: "units",
+  about: "about",
+  amenities: "amenities",
+  gallery: "gallery",
+  reviews: "reviews",
+  location: "location",
+  "local-tips": "localTips",
+};
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 48);
@@ -35,7 +48,7 @@ export default function Navbar() {
             {siteData.name}
           </Link>
 
-          <div className="hidden items-center gap-6 md:flex">
+          <div className="hidden items-center gap-5 md:flex">
             {siteData.nav.links.map((link) => (
               <Link
                 key={link.to}
@@ -49,9 +62,10 @@ export default function Navbar() {
                   scrolled ? "text-cocoa/80" : "text-white/80"
                 }`}
               >
-                {link.label}
+                {t(`nav.${navKeyMap[link.to] || link.to}`)}
               </Link>
             ))}
+            <LanguageToggle light={!scrolled} />
             <ThemeToggle light={!scrolled} />
             <Link
               to="unit-selector"
@@ -60,11 +74,12 @@ export default function Navbar() {
               offset={-80}
               className="rounded-full bg-amber px-5 py-2 text-sm font-semibold text-white shadow-md transition-all hover:bg-clay-dark hover:shadow-lg"
             >
-              Book Now
+              {t("nav.bookNow")}
             </Link>
           </div>
 
           <div className="flex items-center gap-2 md:hidden">
+            <LanguageToggle light={!scrolled} />
             <ThemeToggle light={!scrolled} />
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
@@ -93,7 +108,7 @@ export default function Navbar() {
                 onClick={() => setMobileOpen(false)}
                 className="cursor-pointer py-2 text-base font-medium text-cocoa/80 transition-colors hover:text-clay"
               >
-                {link.label}
+                {t(`nav.${navKeyMap[link.to] || link.to}`)}
               </Link>
             ))}
             <Link
@@ -104,7 +119,7 @@ export default function Navbar() {
               onClick={() => setMobileOpen(false)}
               className="mt-2 inline-block rounded-full bg-amber px-6 py-3 text-center text-sm font-semibold text-white shadow-md transition-all hover:bg-clay-dark"
             >
-              Book Now
+              {t("nav.bookNow")}
             </Link>
           </div>
         </div>

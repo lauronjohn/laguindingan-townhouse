@@ -1,10 +1,12 @@
 import { useUnit } from "../context/UnitContext";
 import { siteData } from "../data/siteData";
 import { Award } from "lucide-react";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function About() {
   const { activeUnit } = useUnit();
   const { about } = activeUnit;
+  const { t } = useLanguage();
 
   return (
     <section id="about" className="py-20 sm:py-28">
@@ -12,7 +14,7 @@ export default function About() {
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
           <div className="animate-fade-up">
             <span className="mb-3 inline-block rounded-full bg-sage/10 px-4 py-1 text-xs font-semibold uppercase tracking-wider text-sage">
-              {activeUnit.name} &middot; {activeUnit.badge}
+              {t("about.aboutProperty")}
             </span>
             <h2 className="mt-4 font-heading text-3xl font-bold text-cocoa sm:text-4xl">
               {about.headline}
@@ -23,13 +25,8 @@ export default function About() {
 
             <div className="mt-8 grid grid-cols-3 gap-4">
               {about.stats.map((stat) => (
-                <div
-                  key={stat.label}
-                  className="rounded-2xl bg-warm px-3 py-4 text-center shadow-sm"
-                >
-                  <span className="block font-heading text-2xl font-bold text-clay">
-                    {stat.value}
-                  </span>
+                <div key={stat.label} className="rounded-2xl bg-warm px-3 py-4 text-center shadow-sm">
+                  <span className="block font-heading text-2xl font-bold text-clay">{stat.value}</span>
                   <span className="mt-1 block text-xs font-medium uppercase tracking-wider text-cocoa/50">
                     {stat.label}
                   </span>
@@ -42,12 +39,8 @@ export default function About() {
                 <Award className="h-6 w-6 text-sage" />
               </div>
               <div>
-                <p className="text-sm font-semibold text-cocoa">
-                  Guest Favourite on Airbnb
-                </p>
-                <p className="text-xs text-cocoa/60">
-                  One of the most loved homes on Airbnb, based on ratings, reviews & reliability.
-                </p>
+                <p className="text-sm font-semibold text-cocoa">{t("about.guestFavourite")}</p>
+                <p className="text-xs text-cocoa/60">{t("about.guestFavouriteDesc")}</p>
               </div>
             </div>
           </div>
@@ -70,15 +63,11 @@ export default function About() {
                 loading="lazy"
               />
               <div>
-                <p className="font-semibold text-cocoa">
-                  Hosted by {siteData.host.name}
-                </p>
-                <p className="text-sm text-cocoa/60">
-                  Superhost &middot; Hosting since {siteData.host.since}
-                </p>
+                <p className="font-semibold text-cocoa">{t("about.hostedBy")}</p>
+                <p className="text-sm text-cocoa/60">{t("about.hostingSince")}</p>
               </div>
               <div className="ml-auto rounded-full bg-amber/10 px-3 py-1">
-                <span className="text-xs font-semibold text-amber">Superhost</span>
+                <span className="text-xs font-semibold text-amber">{t("about.superhost")}</span>
               </div>
             </div>
           </div>

@@ -5,10 +5,12 @@ import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import { ChevronLeft, ChevronRight, ZoomIn } from "lucide-react";
 import { useUnit } from "../context/UnitContext";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function Gallery() {
   const { activeUnit } = useUnit();
   const { gallery } = activeUnit;
+  const { t } = useLanguage();
 
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
@@ -35,7 +37,7 @@ export default function Gallery() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <span className="inline-block rounded-full bg-sage/10 px-4 py-1 text-xs font-semibold uppercase tracking-wider text-sage">
-            {activeUnit.name} Gallery
+            {t("gallery.badge")}
           </span>
           <h2 className="mt-4 font-heading text-3xl font-bold text-cocoa sm:text-4xl">
             {gallery.headline}
@@ -46,10 +48,7 @@ export default function Gallery() {
           <div className="overflow-hidden rounded-2xl" ref={emblaRef}>
             <div className="flex">
               {gallery.images.map((image, index) => (
-                <div
-                  key={index}
-                  className="min-w-0 flex-[0_0_100%] sm:flex-[0_0_66%] lg:flex-[0_0_50%] pl-4"
-                >
+                <div key={index} className="min-w-0 flex-[0_0_100%] sm:flex-[0_0_66%] lg:flex-[0_0_50%] pl-4">
                   <button
                     onClick={() => openLightbox(index)}
                     className="group relative block w-full overflow-hidden rounded-2xl"
@@ -69,33 +68,18 @@ export default function Gallery() {
             </div>
           </div>
 
-          <button
-            onClick={scrollPrev}
-            className="absolute -left-3 top-1/2 -translate-y-1/2 rounded-full bg-white p-3 shadow-lg transition-all hover:bg-clay hover:text-white sm:-left-5"
-            aria-label="Previous image"
-          >
+          <button onClick={scrollPrev} className="absolute -left-3 top-1/2 -translate-y-1/2 rounded-full bg-white p-3 shadow-lg transition-all hover:bg-clay hover:text-white sm:-left-5" aria-label="Previous image">
             <ChevronLeft className="h-5 w-5" />
           </button>
-          <button
-            onClick={scrollNext}
-            className="absolute -right-3 top-1/2 -translate-y-1/2 rounded-full bg-white p-3 shadow-lg transition-all hover:bg-clay hover:text-white sm:-right-5"
-            aria-label="Next image"
-          >
+          <button onClick={scrollNext} className="absolute -right-3 top-1/2 -translate-y-1/2 rounded-full bg-white p-3 shadow-lg transition-all hover:bg-clay hover:text-white sm:-right-5" aria-label="Next image">
             <ChevronRight className="h-5 w-5" />
           </button>
         </div>
 
-        <p className="mt-6 text-center text-sm text-cocoa/40">
-          Click any image to open full-size gallery
-        </p>
+        <p className="mt-6 text-center text-sm text-cocoa/40">{t("gallery.clickHint")}</p>
       </div>
 
-      <Lightbox
-        open={lightboxOpen}
-        close={() => setLightboxOpen(false)}
-        index={lightboxIndex}
-        slides={lightboxSlides}
-      />
+      <Lightbox open={lightboxOpen} close={() => setLightboxOpen(false)} index={lightboxIndex} slides={lightboxSlides} />
     </section>
   );
 }
