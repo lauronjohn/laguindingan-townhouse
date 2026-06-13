@@ -19,13 +19,22 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 mx-auto max-w-4xl px-4 text-center animate-fade-in">
-        <p className="mb-3 font-body text-sm font-semibold uppercase tracking-[0.2em] text-white drop-shadow">
+        <p
+          className="mb-3 font-body text-sm font-semibold uppercase tracking-[0.2em] text-white"
+          style={{ textShadow: "0 2px 8px rgba(0,0,0,0.7)" }}
+        >
           {siteData.hero.subheadline}
         </p>
-        <h1 className="mb-6 font-heading text-4xl font-bold leading-tight text-white drop-shadow-md sm:text-5xl lg:text-6xl">
+        <h1
+          className="mb-6 font-heading text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl"
+          style={{ textShadow: "0 3px 12px rgba(0,0,0,0.8)" }}
+        >
           {siteData.hero.headline}
         </h1>
-        <p className="mx-auto mb-10 max-w-2xl text-base text-white drop-shadow sm:text-lg">
+        <p
+          className="mx-auto mb-10 max-w-2xl text-base text-white sm:text-lg"
+          style={{ textShadow: "0 2px 6px rgba(0,0,0,0.6)" }}
+        >
           {siteData.hero.description}
         </p>
 
