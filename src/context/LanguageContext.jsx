@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useCallback } from "react";
+import { createContext, useContext, useState, useCallback, useEffect } from "react";
 import { translations } from "../data/translations";
 
 const LanguageContext = createContext(null);
@@ -6,17 +6,19 @@ const LanguageContext = createContext(null);
 export function LanguageProvider({ children }) {
   const [lang, setLang] = useState(() => {
     if (typeof window !== "undefined") {
-      return localStorage.getItem("lang") || "en";
+      const stored = localStorage.getItem("lang");
+      if (stored === "en" || stored === "zh") return stored;
     }
     return "en";
   });
 
+  useEffect(() => {
+    document.documentElement.lang = lang;
+    localStorage.setItem("lang", lang);
+  }, [lang]);
+
   const toggleLang = useCallback(() => {
-    setLang((prev) => {
-      const next = prev === "en" ? "zh" : "en";
-      localStorage.setItem("lang", next);
-      return next;
-    });
+    setLang((prev) => (prev === "en" ? "zh" : "en"));
   }, []);
 
   const t = useCallback(
