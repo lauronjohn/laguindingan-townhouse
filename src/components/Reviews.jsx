@@ -48,7 +48,9 @@ export default function Reviews() {
                   <span className="font-semibold text-cocoa">{review.name}</span>
                   <BadgeCheck className="h-4 w-4 text-sage" />
                 </div>
-                <span className="text-xs text-cocoa/40">{review.location}</span>
+                <span className="text-xs text-cocoa/40">
+                  {tf(`reviewLocations.${review.location}`, review.location)}
+                </span>
               </div>
             </div>
           ))}

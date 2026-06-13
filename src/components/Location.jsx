@@ -42,7 +42,7 @@ export default function Location() {
 
         <div className="mt-12 overflow-hidden rounded-3xl shadow-lg">
           <iframe
-            title="Laguindingan Townhouse Location"
+            title={t("aria.locationTitle")}
             src={`https://www.openstreetmap.org/export/embed.html?bbox=${siteData.location.lng - 0.02}%2C${siteData.location.lat - 0.01}%2C${siteData.location.lng + 0.02}%2C${siteData.location.lat + 0.01}&layer=mapnik&marker=${siteData.location.lat}%2C${siteData.location.lng}`}
             width="100%"
             height="400"

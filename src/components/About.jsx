@@ -55,7 +55,7 @@ export default function About() {
             <div className="overflow-hidden rounded-3xl shadow-xl">
               <img
                 src={about.image}
-                alt={`${activeUnit.name} interior`}
+                alt={t("aria.aboutInterior", { name: activeUnit.name })}
                 className="h-auto w-full object-cover"
                 loading="lazy"
               />

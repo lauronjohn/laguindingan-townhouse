@@ -3,7 +3,7 @@ import { useLanguage } from "../context/LanguageContext";
 const labels = { en: "EN", zh: "中文" };
 
 export default function LanguageToggle({ light = false }) {
-  const { lang, toggleLang } = useLanguage();
+  const { lang, toggleLang, t } = useLanguage();
 
   return (
     <button
@@ -13,7 +13,7 @@ export default function LanguageToggle({ light = false }) {
           ? "text-white/70 hover:text-white hover:bg-white/10"
           : "text-cocoa/60 hover:text-cocoa hover:bg-cocoa/5"
       }`}
-      aria-label={`Switch language to ${lang === "en" ? "Chinese" : "English"}`}
+      aria-label={t("aria.switchLang", { lang: lang === "en" ? t("aria.languageNameZH") : t("aria.languageNameEN") })}
     >
       {labels[lang]}
     </button>

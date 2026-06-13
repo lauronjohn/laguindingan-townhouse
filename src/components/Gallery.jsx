@@ -68,10 +68,10 @@ export default function Gallery() {
             </div>
           </div>
 
-          <button onClick={scrollPrev} className="absolute -left-3 top-1/2 -translate-y-1/2 rounded-full bg-white p-3 shadow-lg transition-all hover:bg-clay hover:text-white sm:-left-5" aria-label="Previous image">
+          <button onClick={scrollPrev} className="absolute -left-3 top-1/2 -translate-y-1/2 rounded-full bg-white p-3 shadow-lg transition-all hover:bg-clay hover:text-white sm:-left-5" aria-label={t("aria.prevImage")}>
             <ChevronLeft className="h-5 w-5" />
           </button>
-          <button onClick={scrollNext} className="absolute -right-3 top-1/2 -translate-y-1/2 rounded-full bg-white p-3 shadow-lg transition-all hover:bg-clay hover:text-white sm:-right-5" aria-label="Next image">
+          <button onClick={scrollNext} className="absolute -right-3 top-1/2 -translate-y-1/2 rounded-full bg-white p-3 shadow-lg transition-all hover:bg-clay hover:text-white sm:-right-5" aria-label={t("aria.nextImage")}>
             <ChevronRight className="h-5 w-5" />
           </button>
         </div>

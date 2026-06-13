@@ -83,7 +83,7 @@ export default function Navbar() {
             <ThemeToggle light={!scrolled} />
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              aria-label="Toggle menu"
+              aria-label={t("aria.toggleMenu")}
             >
               {mobileOpen ? (
                 <X className={`h-6 w-6 ${scrolled ? "text-cocoa" : "text-white"}`} />
