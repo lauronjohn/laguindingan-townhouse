@@ -10,7 +10,7 @@ const statKeyMap = {
 
 export default function UnitSelector() {
   const { activeUnit, setActiveUnit, units } = useUnit();
-  const { t } = useLanguage();
+  const { t, tf } = useLanguage();
 
   return (
     <section id="unit-selector" className="bg-white py-10">
@@ -40,10 +40,10 @@ export default function UnitSelector() {
                 <button onClick={() => setActiveUnit(unit)} className="w-full text-left">
                   <div className="flex items-center justify-between">
                     <span className={`font-heading text-xl font-bold ${isActive ? "text-clay" : "text-cocoa"}`}>
-                      {unit.name}
+                      {tf(`units.${unit.id}.name`, unit.name)}
                     </span>
                     <span className={`rounded-full px-3 py-0.5 text-xs font-medium ${isActive ? "bg-clay text-white" : "bg-cocoa/5 text-cocoa/50"}`}>
-                      {unit.badge}
+                      {tf(`units.${unit.id}.badge`, unit.badge)}
                     </span>
                   </div>
                   <div className="mt-2 flex items-center gap-1">
@@ -71,7 +71,7 @@ export default function UnitSelector() {
                   rel="noopener noreferrer"
                   className="mt-4 flex w-full items-center justify-center rounded-full bg-amber px-4 py-2.5 text-sm font-semibold text-white shadow transition-all hover:bg-clay-dark hover:shadow-md"
                 >
-                  {t("unitSelector.bookUnit", { name: unit.name })}
+                  {t("unitSelector.bookUnit", { name: tf(`units.${unit.id}.name`, unit.name) })}
                 </a>
               </div>
             );

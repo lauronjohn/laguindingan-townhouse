@@ -4,14 +4,14 @@ import { useLanguage } from "../context/LanguageContext";
 
 export default function FinalCTA() {
   const { activeUnit } = useUnit();
-  const { t } = useLanguage();
+  const { t, tf } = useLanguage();
 
   return (
     <section className="relative overflow-hidden">
       <div className="bg-gradient-to-br from-clay to-amber py-20 sm:py-28">
         <div className="mx-auto max-w-4xl px-4 text-center">
           <p className="mb-2 font-body text-sm font-medium uppercase tracking-[0.15em] text-white/70">
-            {activeUnit.name}
+            {tf(`units.${activeUnit.id}.name`, activeUnit.name)}
           </p>
           <h2 className="font-heading text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
             {t("finalCta.heading")}

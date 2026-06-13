@@ -20,7 +20,7 @@ export default function About() {
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
           <div className="animate-fade-up">
             <span className="mb-3 inline-block rounded-full bg-sage/10 px-4 py-1 text-xs font-semibold uppercase tracking-wider text-sage">
-              {t("about.aboutProperty")}
+              {tf(`units.${activeUnit.id}.name`, activeUnit.name)} · {tf(`units.${activeUnit.id}.badge`, activeUnit.badge)}
             </span>
             <h2 className="mt-4 font-heading text-3xl font-bold text-cocoa sm:text-4xl">
               {tf(`units.${activeUnit.id}.aboutHeadline`, about.headline)}

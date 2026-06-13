@@ -124,6 +124,8 @@ export const translations = {
     },
     units: {
       "unit-1": {
+        name: "Unit 1",
+        badge: "3 Beds",
         aboutHeadline: "Unit 1 — The Cozy Retreat",
         aboutDescription:
           "Welcome to Unit 1 — a warm and inviting space in the townhouse with 3 comfortable beds. Located just 5 minutes from the airport, this home is perfect for families or small groups looking for a reliable, cozy stay close to the terminal.",
@@ -143,6 +145,8 @@ export const translations = {
         },
       },
       "unit-2": {
+        name: "Unit 2",
+        badge: "6 Beds",
         aboutHeadline: "Unit 2 — The Group Haven",
         aboutDescription:
           "Unit 2 is built for bigger gatherings — with 6 beds spread across the townhouse, a spacious living room, and a full dining area. Just 6 minutes from the airport, it's the go-to choice for large families or groups traveling together.",
@@ -162,6 +166,8 @@ export const translations = {
         },
       },
       "unit-3": {
+        name: "Unit 3",
+        badge: "4 Beds",
         aboutHeadline: "Unit 3 — The Suite Escape",
         aboutDescription:
           "Unit 3 is the elevated pick — featuring three air-conditioned bedrooms including a master suite with a private balcony. With 4 beds, a large living room, and refined touches throughout, it's ideal for those who want a little extra style near Laguindingan Airport.",
@@ -308,6 +314,8 @@ export const translations = {
     },
     units: {
       "unit-1": {
+        name: "单元1",
+        badge: "3张床",
         aboutHeadline: "单元1 — 温馨居所",
         aboutDescription:
           "欢迎来到单元1 — 联排别墅中温暖舒适的空间，配有3张舒适的床。距离机场仅5分钟车程，非常适合寻找靠近航站楼、舒适可靠住宿的家庭或小团体。",
@@ -327,6 +335,8 @@ export const translations = {
         },
       },
       "unit-2": {
+        name: "单元2",
+        badge: "6张床",
         aboutHeadline: "单元2 — 团体乐园",
         aboutDescription:
           "单元2专为大型聚会打造 — 联排别墅内配有6张床、宽敞的客厅和完整的用餐区。距离机场仅6分钟，是大家庭或团体出行的首选。",
@@ -346,6 +356,8 @@ export const translations = {
         },
       },
       "unit-3": {
+        name: "单元3",
+        badge: "4张床",
         aboutHeadline: "单元3 — 套房尊享",
         aboutDescription:
           "单元3是升级之选 — 三间空调卧室，包括带私人阳台的主卧套房。配有4张床、宽敞客厅和精致细节，非常适合希望在拉吉丁安机场附近享受额外格调的客人。",
